@@ -1,1 +1,3858 @@
-[{"id":"7cd8b328.dccc34","type":"tab","label":"Flow 1","disabled":true,"info":""},{"id":"2e7c0ab1.757bb6","type":"tab","label":"real plc","disabled":true,"info":""},{"id":"f0a3869a.177bb8","type":"tab","label":"Flow 2","disabled":true,"info":""},{"id":"6a38c0bd.801a9","type":"tab","label":"S7","disabled":false,"info":""},{"id":"60cc6c68.946404","type":"tab","label":"PLCFN","disabled":false,"info":""},{"id":"d5e4d39c.6d5aa8","type":"tab","label":"chanels","disabled":false,"info":""},{"id":"8ee99e4c.e7fa28","type":"tab","label":"Flow 3","disabled":false,"info":""},{"id":"3548963e.888d6a","type":"s7 endpoint","z":"7cd8b328.dccc34","transport":"iso-on-tcp","address":"192.168.10.103","port":"102","rack":"0","slot":"1","localtsaphi":"01","localtsaplo":"00","remotetsaphi":"01","remotetsaplo":"00","connmode":"rack-slot","adapter":"","busaddr":"2","cycletime":"1000","timeout":"1000","name":"PLCSIM","vartable":[{"addr":"DB1,I0","name":"Var0"},{"addr":"DB1,I1","name":"Var1"},{"addr":"DB1,I2","name":"Var2"},{"addr":"DB1,I3","name":"Var3"},{"addr":"DB1,I4","name":"Var4"},{"addr":"DB1,I5","name":"Var5"},{"addr":"DB1,I6","name":"Var6"},{"addr":"DB1,I7","name":"Var7"},{"addr":"DB1,I8","name":"Var8"},{"addr":"DB1,I9","name":"Var9"}]},{"id":"7b0cef48.67d668","type":"s7 endpoint","z":"","transport":"iso-on-tcp","address":"192.168.10.103","port":"102","rack":"0","slot":"1","localtsaphi":"01","localtsaplo":"00","remotetsaphi":"01","remotetsaplo":"00","connmode":"rack-slot","adapter":"","busaddr":"2","cycletime":"1000","timeout":"1000","name":"S7-1200","vartable":[{"addr":"DB1,BYTE0.100","name":"PLCFG"},{"addr":"DB5,BYTE0.256","name":"MODULES"},{"addr":"DB3,BYTE0.12","name":"CHBUF"},{"addr":"DB3,BYTE12.72","name":"SUBMODULE"},{"addr":"DB5,WORD0","name":"MODULES[0].STA"},{"addr":"DB5,WORD16","name":"MODULES[1].STA"},{"addr":"DB5,WORD32","name":"MODULES[2].STA"},{"addr":"DB5,WORD48","name":"MODULES[3].STA"},{"addr":"DB5,WORD64","name":"MODULES[4].STA"},{"addr":"DB5,WORD80","name":"MODULES[5].STA"},{"addr":"DB5,WORD96","name":"MODULES[6].STA"},{"addr":"DB5,WORD112","name":"MODULES[7].STA"},{"addr":"DB5,WORD128","name":"MODULES[8].STA"},{"addr":"DB5,WORD144","name":"MODULES[9].STA"},{"addr":"DB5,WORD160","name":"MODULES[10].STA"},{"addr":"DB5,WORD176","name":"MODULES[11].STA"},{"addr":"DB5,WORD192","name":"MODULES[12].STA"},{"addr":"DB5,WORD208","name":"MODULES[13].STA"},{"addr":"DB5,WORD224","name":"MODULES[14].STA"},{"addr":"DB5,WORD240","name":"MODULES[15].STA"},{"addr":"DB3,WORD18","name":"SUBMODULE.CMD"},{"addr":"DB3,WORD6","name":"CHBUF.CMD"},{"addr":"DB3,WORD8","name":"CHBUF.VAL"}]},{"id":"887da873.2fd148","type":"ui_tab","z":"","name":"PLC","icon":"dashboard","order":1,"disabled":false,"hidden":false},{"id":"5475c407.345374","type":"ui_base","theme":{"name":"theme-light","lightTheme":{"default":"#0094CE","baseColor":"#0094CE","baseFont":"-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif","edited":true,"reset":false},"darkTheme":{"default":"#097479","baseColor":"#097479","baseFont":"-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif","edited":true,"reset":false},"customTheme":{"name":"Untitled Theme 1","default":"#4B7930","baseColor":"#4B7930","baseFont":"-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif","reset":false},"themeState":{"base-color":{"default":"#0094CE","value":"#0094CE","edited":false},"page-titlebar-backgroundColor":{"value":"#0094CE","edited":false},"page-backgroundColor":{"value":"#fafafa","edited":false},"page-sidebar-backgroundColor":{"value":"#ffffff","edited":false},"group-textColor":{"value":"#1bbfff","edited":false},"group-borderColor":{"value":"#ffffff","edited":false},"group-backgroundColor":{"value":"#ffffff","edited":false},"widget-textColor":{"value":"#111111","edited":false},"widget-backgroundColor":{"value":"#0094ce","edited":false},"widget-borderColor":{"value":"#ffffff","edited":false},"base-font":{"value":"-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"}},"angularTheme":{"primary":"indigo","accents":"blue","warn":"red","background":"grey"}},"site":{"name":"Node-RED Dashboard","hideToolbar":"true","allowSwipe":"false","lockMenu":"true","allowTempTheme":"true","dateFormat":"DD/MM/YYYY","sizes":{"sx":40,"sy":40,"gx":3,"gy":3,"cx":1,"cy":1,"px":0,"py":0}}},{"id":"b722e82f.c65448","type":"mqtt-broker","z":"","name":"","broker":"test.mosquitto.org","port":"1883","clientid":"","usetls":false,"compatmode":false,"keepalive":"60","cleansession":true,"birthTopic":"","birthQos":"0","birthPayload":"","closeTopic":"","closeQos":"0","closePayload":"","willTopic":"","willQos":"0","willPayload":""},{"id":"400331db.f015d","type":"ui_group","z":"","name":"banner","tab":"887da873.2fd148","order":1,"disp":false,"width":"8","collapse":false},{"id":"b21cecb6.492258","type":"ui_group","z":"","name":"tags1","tab":"887da873.2fd148","order":3,"disp":true,"width":5,"collapse":false},{"id":"66385b7e.c49274","type":"ui_group","z":"","name":"tags2","tab":"887da873.2fd148","order":2,"disp":true,"width":"5","collapse":true},{"id":"2f10bcc4.607064","type":"ui_spacer","name":"spacer","group":"66385b7e.c49274","order":2,"width":1,"height":1},{"id":"fed38678.421bf8","type":"ui_tab","z":"","name":"CHS","icon":"dashboard","order":2,"disabled":false,"hidden":false},{"id":"e55006e6.6c052","type":"ui_group","z":"","name":"modules","tab":"fed38678.421bf8","order":2,"disp":false,"width":"30","collapse":false},{"id":"585ae877.96e7","type":"ui_group","z":"","name":"ui_control","tab":"6b94a47f.d6a58c","order":1,"disp":true,"width":"22","collapse":false},{"id":"6b94a47f.d6a58c","type":"ui_tab","z":"","name":"Home","icon":"dashboard","order":3,"disabled":false,"hidden":false},{"id":"c5ddeb01.8712a8","type":"ui_group","z":"","name":"канали","tab":"fed38678.421bf8","order":3,"disp":false,"width":"10","collapse":false},{"id":"f7cc47d8.8ed128","type":"ui_group","z":"","name":"Вибраний канал","tab":"fed38678.421bf8","order":4,"disp":false,"width":"14","collapse":false},{"id":"bfe7694c.539358","type":"ui_spacer","name":"spacer","group":"f7cc47d8.8ed128","order":6,"width":9,"height":1},{"id":"f08bea01.39bfb","type":"ui_group","z":"","name":"banner","tab":"fed38678.421bf8","order":1,"disp":false,"width":"9","collapse":false},{"id":"be703216.8405c8","type":"s7 in","z":"7cd8b328.dccc34","endpoint":"3548963e.888d6a","mode":"single","variable":"CHDI[1].STA","diff":false,"name":"","x":210,"y":40,"wires":[["6da6addf.b0279c"]]},{"id":"6da6addf.b0279c","type":"debug","z":"7cd8b328.dccc34","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":420,"y":40,"wires":[]},{"id":"d17237a5.f6ea18","type":"s7 out","z":"7cd8b328.dccc34","endpoint":"3548963e.888d6a","variable":"CHDI[1].STA","name":"","x":340,"y":160,"wires":[]},{"id":"49cac438.09fa5c","type":"inject","z":"7cd8b328.dccc34","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"-1","payloadType":"num","x":150,"y":160,"wires":[["b0e3c155.33de4","d17237a5.f6ea18"]]},{"id":"b0e3c155.33de4","type":"debug","z":"7cd8b328.dccc34","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":290,"y":120,"wires":[]},{"id":"54bc8de3.d79334","type":"s7 control","z":"7cd8b328.dccc34","endpoint":"3548963e.888d6a","function":"cycletime","name":"","x":300,"y":260,"wires":[["5612f7ee.0597f8"]]},{"id":"5612f7ee.0597f8","type":"debug","z":"7cd8b328.dccc34","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":500,"y":240,"wires":[]},{"id":"f81b2cd5.92f17","type":"inject","z":"7cd8b328.dccc34","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"0","payloadType":"num","x":100,"y":240,"wires":[["54bc8de3.d79334"]]},{"id":"1e570f4e.b2b749","type":"s7 control","z":"7cd8b328.dccc34","endpoint":"3548963e.888d6a","function":"trigger","name":"","x":350,"y":340,"wires":[["5612f7ee.0597f8"]]},{"id":"acfb5d32.c21f2","type":"inject","z":"7cd8b328.dccc34","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"0","payloadType":"num","x":160,"y":340,"wires":[["1e570f4e.b2b749"]]},{"id":"e5bb5eee.22592","type":"s7 control","z":"7cd8b328.dccc34","endpoint":"3548963e.888d6a","function":"","name":"","x":290,"y":420,"wires":[["5612f7ee.0597f8"]]},{"id":"f09bcd6f.08c1e8","type":"inject","z":"7cd8b328.dccc34","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"0","payloadType":"num","x":100,"y":400,"wires":[["e5bb5eee.22592"]]},{"id":"8b192894.beb558","type":"inject","z":"7cd8b328.dccc34","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"","payloadType":"date","x":520,"y":140,"wires":[["a15a7c01.2c123"]]},{"id":"85b296fb.43ac88","type":"debug","z":"7cd8b328.dccc34","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":870,"y":160,"wires":[]},{"id":"a15a7c01.2c123","type":"change","z":"7cd8b328.dccc34","name":"","rules":[{"t":"set","p":"payload","pt":"msg","to":"","tot":"str"}],"action":"","property":"","from":"","to":"","reg":false,"x":680,"y":140,"wires":[["85b296fb.43ac88"]]},{"id":"a8666eda.f4a5c","type":"s7 in","z":"2e7c0ab1.757bb6","endpoint":"7b0cef48.67d668","mode":"single","variable":"MEA1","diff":true,"name":"","x":170,"y":100,"wires":[["7281295f.74b8d"]]},{"id":"97745f85.ba2c18","type":"s7 in","z":"2e7c0ab1.757bb6","endpoint":"7b0cef48.67d668","mode":"single","variable":"RAMP","diff":true,"name":"","x":170,"y":200,"wires":[["d9dafde3.0f62d8"]]},{"id":"4bdb12c9.57dfd4","type":"s7 in","z":"2e7c0ab1.757bb6","endpoint":"7b0cef48.67d668","mode":"single","variable":"SIN","diff":true,"name":"","x":150,"y":300,"wires":[["bacfa615.1dedc8","145d9ef6.2a5b51"]]},{"id":"7281295f.74b8d","type":"debug","z":"2e7c0ab1.757bb6","name":"","active":false,"tosidebar":true,"console":false,"tostatus":false,"complete":"true","targetType":"full","statusVal":"","statusType":"auto","x":370,"y":80,"wires":[]},{"id":"d9dafde3.0f62d8","type":"debug","z":"2e7c0ab1.757bb6","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"true","targetType":"full","statusVal":"","statusType":"auto","x":370,"y":180,"wires":[]},{"id":"bacfa615.1dedc8","type":"debug","z":"2e7c0ab1.757bb6","name":"","active":false,"tosidebar":true,"console":false,"tostatus":false,"complete":"true","targetType":"full","statusVal":"","statusType":"auto","x":370,"y":300,"wires":[]},{"id":"3f2f49a9.c51566","type":"mqtt out","z":"2e7c0ab1.757bb6","name":"","topic":"NUFT TI4/Variant2/TT101","qos":"","retain":"","broker":"b722e82f.c65448","x":590,"y":440,"wires":[]},{"id":"145d9ef6.2a5b51","type":"change","z":"2e7c0ab1.757bb6","name":"","rules":[{"t":"set","p":"payload","pt":"msg","to":"(payload + 1) * 50","tot":"jsonata"}],"action":"","property":"","from":"","to":"","reg":false,"x":310,"y":400,"wires":[["3f2f49a9.c51566"]]},{"id":"a8ae4c07.748f9","type":"inject","z":"f0a3869a.177bb8","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"","payloadType":"date","x":190,"y":60,"wires":[["c12aecce.60fbc"]]},{"id":"c12aecce.60fbc","type":"file in","z":"f0a3869a.177bb8","name":"","filename":"C:\\Users\\san\\.node-red\\projects\\s7tcpip\\flow.json","format":"utf8","chunk":false,"sendError":false,"encoding":"none","x":500,"y":100,"wires":[["c0cc7335.313d1"]]},{"id":"f092704e.6f57e8","type":"debug","z":"f0a3869a.177bb8","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"true","targetType":"full","statusVal":"","statusType":"auto","x":590,"y":440,"wires":[]},{"id":"c0cc7335.313d1","type":"json","z":"f0a3869a.177bb8","name":"","property":"payload","action":"","pretty":false,"x":130,"y":180,"wires":[["7f3d3eeb.b7cf7"]]},{"id":"7f3d3eeb.b7cf7","type":"split","z":"f0a3869a.177bb8","name":"","splt":"\\n","spltType":"str","arraySplt":1,"arraySpltType":"len","stream":false,"addname":"","x":290,"y":180,"wires":[["a1a8aaf0.72cc9"]]},{"id":"a1a8aaf0.72cc9","type":"switch","z":"f0a3869a.177bb8","name":"","property":"payload.type","propertyType":"msg","rules":[{"t":"eq","v":"s7 endpoint","vt":"str"},{"t":"else"}],"checkall":"true","repair":false,"outputs":2,"x":430,"y":180,"wires":[["33de73f6.a4a53c"],["7c509613.88ec48"]]},{"id":"33de73f6.a4a53c","type":"switch","z":"f0a3869a.177bb8","name":"","property":"payload.name","propertyType":"msg","rules":[{"t":"eq","v":"PLCSIM","vt":"str"},{"t":"else"}],"checkall":"true","repair":false,"outputs":2,"x":590,"y":180,"wires":[["a52471aa.1a3708"],["7c509613.88ec48"]]},{"id":"a52471aa.1a3708","type":"function","z":"f0a3869a.177bb8","name":"","func":"msg.payload.vartable = [];\nfor (let i=0; i<10; i++){\n    msg.payload.vartable[i] = {\n        addr : \"DB1,I\" + i , \n        name : \"Var\" + i \n    };\n}\nreturn msg;","outputs":1,"noerr":0,"initialize":"","finalize":"","x":680,"y":240,"wires":[["7c509613.88ec48"]]},{"id":"7c509613.88ec48","type":"join","z":"f0a3869a.177bb8","name":"","mode":"auto","build":"string","property":"payload","propertyType":"msg","key":"topic","joiner":"\\n","joinerType":"str","accumulate":"false","timeout":"","count":"","reduceRight":false,"x":540,"y":320,"wires":[["3038704d.495ef"]]},{"id":"3038704d.495ef","type":"json","z":"f0a3869a.177bb8","name":"","property":"payload","action":"","pretty":false,"x":370,"y":380,"wires":[["4dbcafd0.f86a3"]]},{"id":"4dbcafd0.f86a3","type":"file","z":"f0a3869a.177bb8","name":"","filename":"C:\\Users\\san\\.node-red\\projects\\s7tcpip\\flow.json","appendNewline":true,"createDir":false,"overwriteFile":"true","encoding":"none","x":310,"y":480,"wires":[["f092704e.6f57e8"]]},{"id":"3d03536f.c449bc","type":"s7 in","z":"6a38c0bd.801a9","endpoint":"7b0cef48.67d668","mode":"single","variable":"PLCFG","diff":true,"name":"","x":110,"y":120,"wires":[["6b2879a9.faa7d8"]]},{"id":"3413756.e94040a","type":"inject","z":"60cc6c68.946404","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":true,"onceDelay":"1","topic":"","payload":"","payloadType":"date","x":95,"y":60,"wires":[["1b4df219.13aede"]],"l":false},{"id":"1d5b0bad.2cde14","type":"file in","z":"60cc6c68.946404","name":"json","filename":"","format":"utf8","chunk":false,"sendError":false,"encoding":"none","x":235,"y":60,"wires":[["d9fcb95.707fd48"]],"l":false},{"id":"1b4df219.13aede","type":"function","z":"60cc6c68.946404","name":"","func":"msg.filename = global.get ('jsonpath') + 'plccfg.json';\n\nreturn msg;","outputs":1,"noerr":0,"initialize":"","finalize":"","x":175,"y":60,"wires":[["1d5b0bad.2cde14"]],"l":false},{"id":"8308e59f.41e048","type":"debug","z":"60cc6c68.946404","name":"","active":false,"tosidebar":true,"console":false,"tostatus":false,"complete":"true","targetType":"full","statusVal":"","statusType":"auto","x":515,"y":60,"wires":[],"l":false},{"id":"d9fcb95.707fd48","type":"json","z":"60cc6c68.946404","name":"","property":"payload","action":"","pretty":false,"x":295,"y":60,"wires":[["43eb5f40.5ccae8"]],"l":false},{"id":"231d1c57.aea134","type":"link in","z":"60cc6c68.946404","name":"toplcfn","links":["e41aacd.6e8375"],"x":65,"y":180,"wires":[["cfd28ee5.798be8","b745d249.212aa8"]]},{"id":"43eb5f40.5ccae8","type":"change","z":"60cc6c68.946404","name":"","rules":[{"t":"set","p":"plc1.plccfg","pt":"global","to":"payload.plccfg","tot":"msg"}],"action":"","property":"","from":"","to":"","reg":false,"x":355,"y":60,"wires":[["8308e59f.41e048"]],"l":false},{"id":"b745d249.212aa8","type":"function","z":"60cc6c68.946404","name":"toplcrt","func":"const plccfg = global.get (\"plc1.plccfg\");\nconst plcrt = {}; \nlet val, adr, adrw, mask;\nif (!plccfg) return null;\nconst buf = Buffer.from(msg.payload);\nfor (const prop in plccfg){\n    type = plccfg[prop].type;\n    adrw = plccfg[prop].adr;\n    adr = adrw*2;\n    if (prop === 'NOW') {\n    \n    } else if (prop === 'SHIFTPARA'){\n        \n    } else {    \n        switch (type) {\n            case 'UINT':\n                //to fututure chck protocol type\n                val = buf.readUInt16BE(adr);\n                break;\n            case 'INT':\n                val = buf.readInt16BE(adr);\n                break;\n            case 'UDINT':\n                val = buf.readUInt32BE(adr);\n                break;\n            case 'DINT':\n                val = buf.readInt32BE(adr);\n                break;\n            case 'REAL':\n                val = buf.readFloatBE(adr);\n                break;\n            case 'BOOL':\n                if (adrw === 2) adrw=38;//perm\n                if (adrw === 8) adrw=39;\n                adr = adrw * 2;\n                bit = plccfg[prop].bit;\n                mask = 1 << bit;\n                val = ((buf.readInt16BE(adr) & mask) !== 0);\n                break;\n        }    \n    }\n    plcrt[prop] = {\n        decsr: plccfg[prop].descr,\n        val: val,\n        type: type\n    }      \n    //console.log(`${prop}`);\n}\nglobal.set (\"plc1.plcrt\", plcrt);\nmsg.payload = plcrt;\nmsg.topic = \"plcrt\";\nreturn msg;","outputs":1,"noerr":0,"initialize":"","finalize":"","x":200,"y":180,"wires":[["a787a538.e310c","cfd28ee5.798be8","6e50e8d9.5cca88"]]},{"id":"e41aacd.6e8375","type":"link out","z":"6a38c0bd.801a9","name":"plcfroms7","links":["231d1c57.aea134"],"x":315,"y":120,"wires":[]},{"id":"cfd28ee5.798be8","type":"debug","z":"60cc6c68.946404","name":"","active":false,"tosidebar":true,"console":false,"tostatus":false,"complete":"true","targetType":"full","statusVal":"","statusType":"auto","x":115,"y":240,"wires":[],"l":false},{"id":"a787a538.e310c","type":"function","z":"60cc6c68.946404","name":"leds","func":"let inp = msg.payload;\nlet M = (inp.DISP.val > 0) ;\nlet F = (inp.FRC.val > 0) ;\nlet F0 = (inp.FRC0.val > 0) ;\nlet F1 = (inp.FRC1.val > 0) ;\nlet F2 = (inp.FRC2.val > 0) ;\nlet S = (inp.SML.val > 0) ;\nlet W = (inp.WRN.val > 0) ;\nlet A = (inp.ALM.val > 0) ;\nlet E = (inp.BAD.val > 0) ;\n\nlet ca = inp.CNTALM_PERM.val;\nlet cw = inp.CNTWRN_PERM.val;\nlet cb = inp.CNTBAD_PERM.val;\nlet cf = inp.CNTFRC_PERM.val;\nlet cm = inp.CNTMAN_PERM.val;\n\nmsg.ui_control = {tabulator: {\n    columnVertAlign:\"bottom\", //align header contents to bottom of cell\n    headerVisible:false,\n    columns: [\n    {title:\"M\", field:'M', align:\"center\", width:2, formatter: 'function(cell, formatterParams, onRendered){let v = cell.getValue(); cell.getElement().style.backgroundColor = (v>0) ? \"blue\" : \"LightGrey\"; return \"M\"}'},\n    {title:\"F0\", field:'F0', align:\"center\", width:2, formatter: 'function(cell, formatterParams, onRendered){let v = cell.getValue(); cell.getElement().style.backgroundColor = (v>0) ? \"DarkBlue\" : \"LightGrey\"; cell.getElement().style.color = (v>0) ? \"white\" : \"black\"; return \"F0\"}'},\n    {title:\"F1\", field:'F1', align:\"center\", width:2, formatter: 'function(cell, formatterParams, onRendered){let v = cell.getValue(); cell.getElement().style.backgroundColor = (v>0) ? \"DarkBlue\" : \"LightGrey\"; cell.getElement().style.color = (v>0) ? \"white\" : \"black\"; return \"F1\"}'},\n    {title:\"F2\", field:'F2', align:\"center\", width:2, formatter: 'function(cell, formatterParams, onRendered){let v = cell.getValue(); cell.getElement().style.backgroundColor = (v>0) ? \"DarkBlue\" : \"LightGrey\"; cell.getElement().style.color = (v>0) ? \"white\" : \"black\"; return \"F2\"}'},\n    {title:\"S\", field:'S', align:\"center\", width:2, formatter: 'function(cell, formatterParams, onRendered){let v = cell.getValue(); cell.getElement().style.backgroundColor = (v>0) ? \"aqua\" : \"LightGrey\"; return \"S\"}'},\n    {title:\"W\", field:'W', align:\"center\", width:2, formatter: 'function(cell, formatterParams, onRendered){let v = cell.getValue(); cell.getElement().style.backgroundColor = (v>0) ? \"yellow\" : \"LightGrey\"; return \"W\"}'},\n    {title:\"A\", field:'A', align:\"center\", width:2, formatter: 'function(cell, formatterParams, onRendered){let v = cell.getValue(); cell.getElement().style.backgroundColor = (v>0) ? \"red\" : \"LightGrey\"; return \"A\"}'},\n    {title:\"E\", field:'E', align:\"center\", width:2, formatter: 'function(cell, formatterParams, onRendered){let v = cell.getValue(); cell.getElement().style.backgroundColor = (v>0) ? \"gold\" : \"LightGrey\"; return \"E\"}'},\n    \n    ]}}\nmsg.payload = [{M,F0,F1,F2,S,W,A,E}];   \n\nreturn msg;\n\n/*\nlet M = (msg.payload.DISP.val > 0) ? 'blue' : 'LightGrey';\nlet F = (msg.payload.FRC.val > 0) ? 'DarkBlue' : 'LightGrey';\nlet S = (msg.payload.SML.val > 0) ? 'cyan' : 'LightGrey';\nlet W = (msg.payload.WRN.val > 0) ? 'yellow' : 'LightGrey';\nlet A = (msg.payload.ALM.val > 0) ? 'red' : 'LightGrey';\nlet E = (msg.payload.BAD.val > 0) ? 'gold' : 'LightGrey';\n\n\n- М – це наявність хоча б одного виконавчого механізму в ручному режимі, темно-синій \n- F – наявність хоча б одного форсування, темно-синій\n- S – наявність хоча б одного об'єкта (CM/EM/UNIT) в режимі імітації, блакитний \n- W – наявність хоча б однієї тривоги рівня \"попередження\" (моргає при неквітованій), жовтий \n- A – наявність хоча б однієї тривоги рівня \"аварія\" (моргає при неквітованій), червоний. \n- E – наявність хоча б однієї тривоги рівня \"недостовірність\" (моргає при неквітованій), рожевий. \nДодатковими бітами статусу для відображення також можуть бути: \n\n- наявність хоча б одного біта недостовірності, \n- наявність хоча б однієї відключеної змінної (виведеної з обслуговування), \n- \"процедура технологічної комірки в роботі/паузі/утримання\", \n- \"апарат в роботі/паузі/утримання\", \n- \"CIP в роботі/паузі/утримання\".\n*/","outputs":1,"noerr":0,"initialize":"","finalize":"","x":370,"y":180,"wires":[["c20dad2e.fb9ab8","7686d871.39e448"]]},{"id":"cafe1ef2.d0ed1","type":"ui_table","z":"60cc6c68.946404","d":true,"group":"400331db.f015d","name":"","order":1,"width":6,"height":1,"columns":[{"field":"M","title":"M","width":"15%","align":"left","formatter":"color","formatterParams":{"target":"_blank"}},{"field":"F","title":"F","width":"15%","align":"left","formatter":"color","formatterParams":{"target":"_blank"}},{"field":"S","title":"S","width":"15%","align":"left","formatter":"color","formatterParams":{"target":"_blank"}},{"field":"W","title":"W","width":"15%","align":"left","formatter":"color","formatterParams":{"target":"_blank"}},{"field":"A","title":"A","width":"15%","align":"left","formatter":"color","formatterParams":{"target":"_blank"}},{"field":"E","title":"E","width":"15%","align":"left","formatter":"color","formatterParams":{"target":"_blank"}}],"outputs":0,"cts":false,"x":370,"y":400,"wires":[]},{"id":"f4bd9105.3267d","type":"ui_table","z":"60cc6c68.946404","group":"b21cecb6.492258","name":"","order":1,"width":"4","height":"30","columns":[],"outputs":0,"cts":false,"x":495,"y":220,"wires":[],"l":false},{"id":"6e50e8d9.5cca88","type":"function","z":"60cc6c68.946404","name":"allnumeric","func":"let msg1 = {payload:[]};\nlet msg2 = {payload:[]};\nlet msg3 = {payload:[]};\nlet i1=0, i2 =0, i3=0;\nfor (const prop in msg.payload){\n    if (msg.payload[prop].type === 'BOOL'){\n        msg1.payload[i1] = {'name' : prop, 'val' : msg.payload[prop].val }\n        i1++;\n    } else {\n        msg2.payload[i2] = {'name' : prop, 'val' : msg.payload[prop].val }\n        i2++;\n    }\n}    \nreturn [msg1, msg2, msg3];","outputs":3,"noerr":0,"initialize":"","finalize":"","x":380,"y":260,"wires":[["f4bd9105.3267d","442b2ee.75f245"],["10209233.ba5a56"],[]]},{"id":"442b2ee.75f245","type":"debug","z":"60cc6c68.946404","name":"","active":false,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":560,"y":340,"wires":[]},{"id":"10209233.ba5a56","type":"ui_table","z":"60cc6c68.946404","group":"66385b7e.c49274","name":"","order":1,"width":"4","height":"26","columns":[],"outputs":0,"cts":false,"x":495,"y":260,"wires":[],"l":false},{"id":"6b2879a9.faa7d8","type":"change","z":"6a38c0bd.801a9","name":"","rules":[{"t":"set","p":"protocol","pt":"msg","to":"S7","tot":"str"}],"action":"","property":"","from":"","to":"","reg":false,"x":255,"y":120,"wires":[["e41aacd.6e8375"]],"l":false},{"id":"40e765e7.df381c","type":"inject","z":"60cc6c68.946404","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":true,"onceDelay":0.1,"topic":"","payload":"","payloadType":"date","x":95,"y":100,"wires":[["dccc1b47.fe7ec8"]],"l":false},{"id":"dccc1b47.fe7ec8","type":"change","z":"60cc6c68.946404","name":"","rules":[{"t":"set","p":"jsonpath","pt":"global","to":"G:/san/PLCFramework/GitVer/json/","tot":"str"}],"action":"","property":"","from":"","to":"","reg":false,"x":155,"y":100,"wires":[[]],"l":false},{"id":"72b18591.13adfc","type":"inject","z":"d5e4d39c.6d5aa8","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":true,"onceDelay":"1","topic":"","payload":"","payloadType":"date","x":95,"y":60,"wires":[["a70543a7.3c46a","fceb299d.262fb","b61f547e.feb29","359bcf66.6f771"]],"l":false},{"id":"4d59a2c6.8d9644","type":"file in","z":"d5e4d39c.6d5aa8","name":"json","filename":"","format":"utf8","chunk":false,"sendError":false,"encoding":"none","x":235,"y":60,"wires":[["d96c7842.d263e8"]],"l":false},{"id":"a70543a7.3c46a","type":"function","z":"d5e4d39c.6d5aa8","name":"","func":"msg.filename = global.get ('jsonpath') + 'ch_cfg.json';\n\nreturn msg;","outputs":1,"noerr":0,"initialize":"","finalize":"","x":175,"y":60,"wires":[["4d59a2c6.8d9644"]],"l":false},{"id":"1bdffbac.c0a3c4","type":"debug","z":"d5e4d39c.6d5aa8","name":"","active":false,"tosidebar":true,"console":false,"tostatus":false,"complete":"true","targetType":"full","statusVal":"","statusType":"auto","x":515,"y":60,"wires":[],"l":false},{"id":"d96c7842.d263e8","type":"json","z":"d5e4d39c.6d5aa8","name":"","property":"payload","action":"","pretty":false,"x":295,"y":60,"wires":[["a8e09704.ad6268"]],"l":false},{"id":"a8e09704.ad6268","type":"change","z":"d5e4d39c.6d5aa8","name":"","rules":[{"t":"set","p":"plc1.ch_cfg","pt":"global","to":"payload.ch_cfg","tot":"msg"}],"action":"","property":"","from":"","to":"","reg":false,"x":355,"y":60,"wires":[["1bdffbac.c0a3c4"]],"l":false},{"id":"fceb299d.262fb","type":"function","z":"d5e4d39c.6d5aa8","name":"","func":"msg.filename = global.get ('jsonpath') + 'ch_hmi.json';\n\nreturn msg;","outputs":1,"noerr":0,"initialize":"","finalize":"","x":175,"y":100,"wires":[["a3f2acfd.a5c27"]],"l":false},{"id":"b61f547e.feb29","type":"function","z":"d5e4d39c.6d5aa8","name":"","func":"msg.filename = global.get ('jsonpath') + 'module.json';\n\nreturn msg;","outputs":1,"noerr":0,"initialize":"","finalize":"","x":175,"y":140,"wires":[["ceb49178.1f2c28"]],"l":false},{"id":"359bcf66.6f771","type":"function","z":"d5e4d39c.6d5aa8","name":"","func":"msg.filename = global.get ('jsonpath') + 'submodule.json';\n\nreturn msg;","outputs":1,"noerr":0,"initialize":"","finalize":"","x":175,"y":180,"wires":[["8b2d3e33.5eedf8"]],"l":false},{"id":"a3f2acfd.a5c27","type":"file in","z":"d5e4d39c.6d5aa8","name":"json","filename":"","format":"utf8","chunk":false,"sendError":false,"encoding":"none","x":235,"y":100,"wires":[["94ce6d13.e22f"]],"l":false},{"id":"94ce6d13.e22f","type":"json","z":"d5e4d39c.6d5aa8","name":"","property":"payload","action":"","pretty":false,"x":295,"y":100,"wires":[["728ced26.d06ae4"]],"l":false},{"id":"728ced26.d06ae4","type":"change","z":"d5e4d39c.6d5aa8","name":"","rules":[{"t":"set","p":"plc1.ch_hmi","pt":"global","to":"payload.ch_hmi","tot":"msg"}],"action":"","property":"","from":"","to":"","reg":false,"x":355,"y":100,"wires":[["1bdffbac.c0a3c4"]],"l":false},{"id":"ceb49178.1f2c28","type":"file in","z":"d5e4d39c.6d5aa8","name":"json","filename":"","format":"utf8","chunk":false,"sendError":false,"encoding":"none","x":235,"y":140,"wires":[["9f3bcde6.88726"]],"l":false},{"id":"9f3bcde6.88726","type":"json","z":"d5e4d39c.6d5aa8","name":"","property":"payload","action":"","pretty":false,"x":295,"y":140,"wires":[["cbfc380.174bcc8"]],"l":false},{"id":"cbfc380.174bcc8","type":"change","z":"d5e4d39c.6d5aa8","name":"","rules":[{"t":"set","p":"plc1.module","pt":"global","to":"payload.module","tot":"msg"}],"action":"","property":"","from":"","to":"","reg":false,"x":355,"y":140,"wires":[["1bdffbac.c0a3c4"]],"l":false},{"id":"8b2d3e33.5eedf8","type":"file in","z":"d5e4d39c.6d5aa8","name":"json","filename":"","format":"utf8","chunk":false,"sendError":false,"encoding":"none","x":235,"y":180,"wires":[["70ed24d3.a4c19c"]],"l":false},{"id":"70ed24d3.a4c19c","type":"json","z":"d5e4d39c.6d5aa8","name":"","property":"payload","action":"","pretty":false,"x":295,"y":180,"wires":[["efcb8f7a.ce585"]],"l":false},{"id":"efcb8f7a.ce585","type":"change","z":"d5e4d39c.6d5aa8","name":"","rules":[{"t":"set","p":"plc1.submodule","pt":"global","to":"payload.submodule","tot":"msg"}],"action":"","property":"","from":"","to":"","reg":false,"x":355,"y":180,"wires":[["1bdffbac.c0a3c4"]],"l":false},{"id":"ae4b1acd.1d33b8","type":"s7 in","z":"6a38c0bd.801a9","endpoint":"7b0cef48.67d668","mode":"single","variable":"MODULES","diff":true,"name":"","x":120,"y":180,"wires":[["2bd7a237.9d5656"]]},{"id":"2bd7a237.9d5656","type":"change","z":"6a38c0bd.801a9","name":"","rules":[{"t":"set","p":"protocol","pt":"msg","to":"S7","tot":"str"}],"action":"","property":"","from":"","to":"","reg":false,"x":215,"y":180,"wires":[["661dfd21.48bb14"]],"l":false},{"id":"65d22cac.943bc4","type":"link in","z":"d5e4d39c.6d5aa8","name":"tochanels","links":["661dfd21.48bb14"],"x":115,"y":300,"wires":[["e5b78f8e.3a24c8"]]},{"id":"661dfd21.48bb14","type":"link out","z":"6a38c0bd.801a9","name":"chansfroms7","links":["65d22cac.943bc4"],"x":295,"y":180,"wires":[]},{"id":"e5b78f8e.3a24c8","type":"function","z":"d5e4d39c.6d5aa8","name":"tomodules","func":"const plcrt = global.get (\"plc1.plcrt\");\nconst module = global.get (\"plc1.module\");\nconst submodule = global.get (\"plc1.submodule\");\nconst ch_cfg = global.get (\"plc1.ch_cfg\");\nconst ch_hmi = global.get (\"plc1.ch_hmi\");\n\nif (!plcrt || !module || !submodule || !ch_cfg || !ch_hmi) return;\nlet modulscnt = plcrt.MODULSCNT.val;\nif (modulscnt<1) return;\nlet val, adr, adrw, mask, vali;\nlet modules = [];\nconst buf = Buffer.from(msg.payload);\n\nconst modulelength = 8;//in words \nlet bias = 0; //bias for module\nfor (let m = 0; m < modulscnt; m++) {\n    bias = m * modulelength * 2;//in bytes\n    modules [m] = {};\n    for (const prop in module){\n        type = module[prop].type;\n        adrw = module[prop].adr;\n        adr = adrw*2 + bias;\n        switch (prop) {\n        case 'TYPE':\n            vali = buf.readUInt16BE(adr).toString(16); \n            val = [\n                vali[0],\n                vali[1],\n                vali[2],\n                vali[3],                \n            ]\n            break;\n        case 'CHCNTS':\n            vali = buf.readUInt16BE(adr).toString(16); \n            val = [\n                Number.parseInt(vali[0],16) + 1,\n                Number.parseInt(vali[1],16) + 1,\n                Number.parseInt(vali[2],16) + 1,\n                Number.parseInt(vali[3],16) + 1,                \n            ]\n            break;\n        case 'STRTNMB':\n            val = [\n                buf.readUInt16BE(adr),\n                buf.readUInt16BE(adr+2),\n                buf.readUInt16BE(adr+4),\n                buf.readUInt16BE(adr+6),                \n            ]\n            break;\n        case 'STA':\n            vali = buf.readUInt16BE(adr);\n            val = {\n                bad: [\n                (vali & 0b1000) !== 0,\n                (vali & 0b0100) !== 0,\n                (vali & 0b0010) !== 0,\n                (vali & 0b0001) !== 0,\n                ],\n                isbuf: [\n                (vali & 0b10000000) !== 0,\n                (vali & 0b01000000) !== 0,\n                (vali & 0b00100000) !== 0,\n                (vali & 0b00010000) !== 0,\n                ],\n                cmdbuf: [\n                (vali & 0b100000000000) !== 0,\n                (vali & 0b010000000000) !== 0,\n                (vali & 0b001000000000) !== 0,\n                (vali & 0b000100000000) !== 0,\n                ]                \n            }\n            break;            \n        default:\n            switch (type) {\n            case 'UINT':\n                //to fututure chck protocol type\n                val = buf.readUInt16BE(adr);\n                break;\n            case 'INT':\n                //to fututure chck protocol type\n                val = buf.readInt16BE(adr);\n                break;\n            }\n        }\n        modules[m][prop] = {\n        decsr: module[prop].descr,\n        val: val,\n        type: type\n        }    \n    }    \n}\nglobal.set (\"plc1.modules\", modules);\nmsg.payload = modules;\nmsg.topic = \"modules\";\nreturn msg;","outputs":1,"noerr":0,"initialize":"","finalize":"","x":270,"y":300,"wires":[["8d3511d4.950e98"]]},{"id":"1e0c6284.93c0c5","type":"s7 in","z":"6a38c0bd.801a9","endpoint":"7b0cef48.67d668","mode":"single","variable":"CHBUF","diff":true,"name":"","x":110,"y":300,"wires":[["92c8b02.f14f1d"]]},{"id":"4e3c7429.dd3c34","type":"s7 in","z":"6a38c0bd.801a9","endpoint":"7b0cef48.67d668","mode":"single","variable":"SUBMODULE","diff":true,"name":"","x":130,"y":240,"wires":[["3f0a36f9.14a9ea"]]},{"id":"d9f21679.59f4c8","type":"link in","z":"d5e4d39c.6d5aa8","name":"tochbuft","links":["997cd263.a43a68"],"x":115,"y":460,"wires":[["38a1722a.829d46"]]},{"id":"50c9126f.e533b4","type":"link in","z":"d5e4d39c.6d5aa8","name":"tosubmodule","links":["adf4e9b5.558258"],"x":115,"y":380,"wires":[["a9aded68.89c15"]]},{"id":"997cd263.a43a68","type":"link out","z":"6a38c0bd.801a9","name":"chbuftfroms7","links":["d9f21679.59f4c8"],"x":275,"y":300,"wires":[]},{"id":"adf4e9b5.558258","type":"link out","z":"6a38c0bd.801a9","name":"submodfroms7","links":["50c9126f.e533b4"],"x":295,"y":240,"wires":[]},{"id":"92c8b02.f14f1d","type":"change","z":"6a38c0bd.801a9","name":"","rules":[{"t":"set","p":"protocol","pt":"msg","to":"S7","tot":"str"}],"action":"","property":"","from":"","to":"","reg":false,"x":215,"y":300,"wires":[["997cd263.a43a68"]],"l":false},{"id":"3f0a36f9.14a9ea","type":"change","z":"6a38c0bd.801a9","name":"","rules":[{"t":"set","p":"protocol","pt":"msg","to":"S7","tot":"str"}],"action":"","property":"","from":"","to":"","reg":false,"x":235,"y":240,"wires":[["adf4e9b5.558258"]],"l":false},{"id":"38a1722a.829d46","type":"function","z":"d5e4d39c.6d5aa8","name":"tochbuf","func":"const chcfg = global.get (\"plc1.ch_cfg\");\nconst chbuf = {}; \nlet val, adr, adrw, mask;\nif (!chcfg) return null;\nconst buf = Buffer.from(msg.payload);\nfor (const prop in chcfg){\n    type = chcfg[prop].type;\n    adrw = chcfg[prop].adr;\n    adr = adrw*2;\n    switch (type) {\n        case 'UINT':\n            //to fututure chck protocol type\n            val = buf.readUInt16BE(adr);\n            break;\n        case 'INT':\n            val = buf.readInt16BE(adr);\n            break;\n        case 'BOOL':\n            bit = chcfg[prop].bit;\n            mask = 1 << bit;\n            val = ((buf.readInt16BE(adr) & mask) !== 0);\n            break;\n    }    \n    chbuf[prop] = {\n    decsr: chcfg[prop].descr,\n    val: val,\n    type: type\n    }      \n    //console.log(`${prop}`);\n}\nglobal.set (\"plc1.chbuf\", chbuf);\nmsg.payload = chbuf;\nmsg.topic = \"chbuf\";\nreturn msg;","outputs":1,"noerr":0,"initialize":"","finalize":"","x":260,"y":460,"wires":[["a7b79741.4049a8","67767fef.4f0fb","b6d96481.300cc","6b2e9a97.f0ad4c"]]},{"id":"35fb3a3f.97491e","type":"function","z":"d5e4d39c.6d5aa8","name":"map","func":"let table = [{},{},{},{},{},{},{},{}];\nlet i=0;\nfor (const m of msg.payload){\n    let subms = [];\n    for (let j = 0; j < 4; j++) {\n        let prefix = '';\n        subms[j] = {\n            mtypecode: m.TYPE.val[j],\n            strtnmb: m.STRTNMB.val[j],\n            chcnts: m.CHCNTS.val[j],\n            bad: m.STA.val.bad[j],\n            isbuf: m.STA.val.isbuf[j],\n            cmdbuf: m.STA.val.cmdbuf[j]\n        };\n        switch (m.TYPE.val[j]) {\n           case '0':\n            subms[j].mtypestr = ' '; \n            break;\n           case '1':\n            subms[j].mtypestr = 'DI';               \n            break;\n           case '2':\n            subms[j].mtypestr = 'DO';                   \n            break;\n           case '3':\n            subms[j].mtypestr = 'AI';                   \n            break;\n           case '4':\n            subms[j].mtypestr = 'AO';                   \n            break;\n           case '5':\n            subms[j].mtypestr = 'COM';                   \n            break;\n           default: \n            subms[j].mtypestr = ' '; \n            break;           \n        }\n    if (subms[j].isbuf === true) prefix = '>';\n    if (m.TYPE.val[j] >0 ) {\n        table [j]['cfg' + i.toString()] = prefix + subms[j].mtypestr + '(' + m.CHCNTS.val[j] + ')' + ':' + m.STRTNMB.val[j] + '..' + ((+m.STRTNMB.val[j]) + (+m.CHCNTS.val[j]) - 1);\n    } else {\n       table [j]['cfg' + i.toString()] = prefix + '-'; \n    }\n    table [j]['bad' + i.toString()] = (subms[j].bad > 0) ? 'red' : 'LightGrey';        \n    }    \n\n\n    i++;\n}    \nmsg.payload = table;\n\nreturn msg;","outputs":1,"noerr":0,"initialize":"","finalize":"","x":470,"y":300,"wires":[["36b917b9.6de15"]]},{"id":"36b917b9.6de15","type":"ui_table","z":"d5e4d39c.6d5aa8","group":"e55006e6.6c052","name":"modules","order":2,"width":27,"height":4,"columns":[],"outputs":1,"cts":true,"x":620,"y":300,"wires":[["a121e859.15c96"]]},{"id":"f76c12bf.432d1","type":"comment","z":"d5e4d39c.6d5aa8","name":"tableui","info":"[help](https://flows.nodered.org/node/node-red-node-ui-table)\n[tabulator](http://tabulator.info/examples/4.4#column-groups)","x":650,"y":220,"wires":[]},{"id":"8d3511d4.950e98","type":"function","z":"d5e4d39c.6d5aa8","name":"headers","func":"let cntmodules = msg.payload.length; \n\nmsg.ui_control = {tabulator: {\n    columnVertAlign:\"bottom\", //align header contents to bottom of cell\n    columns:[]}};\nfor (let i = 0; i < cntmodules; i++){\n    msg.ui_control.tabulator.columns[i]= {\n        title:i.toString(),\n        align:\"center\",\n        columns:[\n        {title:\"CFG\", field:\"cfg\"+i, align:\"left\", width:100, \n            formatter: 'function(cell, formatterParams, onRendered){let smbl = cell.getValue()[0]; cell.getElement().style.backgroundColor = (smbl===\">\") ? \"aqua\" : \"LightGrey\"; return cell.getValue()}'},\n        {title:\"E\", field:\"bad\"+i, align:\"left\", formatter:\"color\", width:5}\n        ]};    \n}\nreturn msg;\n\n","outputs":1,"noerr":0,"initialize":"","finalize":"","x":375,"y":300,"wires":[["35fb3a3f.97491e"]],"l":false},{"id":"9e7bae2d.a3051","type":"inject","z":"8ee99e4c.e7fa28","name":"","repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"[{\"name\":\"MEQ0451495\",\"room\":\"Bathroom\",\"SET_TEMPERATURE-value\":22,\"ACTUAL_TEMPERATURE-value\":21.8,\"VALVE_STATE-value\":90,\"BATTERY_STATE-value\":2.7,\"BOOST_STATE-value\":0,\"AUTO_MODE-value\":true,\"CONTROL_MODE-value\":0},{\"name\":\"MEQ1875547\",\"room\":\"Living Room\",\"SET_TEMPERATURE-value\":12,\"ACTUAL_TEMPERATURE-value\":16.2,\"VALVE_STATE-value\":0,\"BATTERY_STATE-value\":2.7,\"BOOST_STATE-value\":0,\"AUTO_MODE-value\":false,\"CONTROL_MODE-value\":1},{\"name\":\"MEQ1875538\",\"room\":\"Living Room\",\"SET_TEMPERATURE-value\":18,\"ACTUAL_TEMPERATURE-value\":19.5,\"VALVE_STATE-value\":0,\"BATTERY_STATE-value\":2.6,\"BOOST_STATE-value\":0,\"AUTO_MODE-value\":false,\"CONTROL_MODE-value\":2},{\"name\":\"MEQ0447462\",\"room\":\"Kitchen\",\"SET_TEMPERATURE-value\":17,\"ACTUAL_TEMPERATURE-value\":22.2,\"VALVE_STATE-value\":0,\"BATTERY_STATE-value\":2.7,\"BOOST_STATE-value\":10,\"AUTO_MODE-value\":false,\"CONTROL_MODE-value\":3},{\"name\":\"MEQ1875551\",\"room\":\"Office\",\"SET_TEMPERATURE-value\":18,\"ACTUAL_TEMPERATURE-value\":20.2,\"VALVE_STATE-value\":0,\"BATTERY_STATE-value\":2.7,\"BOOST_STATE-value\":0,\"AUTO_MODE-value\":false,\"CONTROL_MODE-value\":0},{\"name\":\"MEQ0447425\",\"room\":\"Dining Room\",\"SET_TEMPERATURE-value\":19,\"ACTUAL_TEMPERATURE-value\":20.4,\"VALVE_STATE-value\":0,\"BATTERY_STATE-value\":2.7,\"BOOST_STATE-value\":0,\"AUTO_MODE-value\":false,\"CONTROL_MODE-value\":0},{\"name\":\"MEQ1875546\",\"room\":\"Dining Room\",\"SET_TEMPERATURE-value\":20,\"ACTUAL_TEMPERATURE-value\":18.8,\"VALVE_STATE-value\":99,\"BATTERY_STATE-value\":2.7,\"BOOST_STATE-value\":0,\"AUTO_MODE-value\":false,\"CONTROL_MODE-value\":0},{\"name\":\"MEQ0447483\",\"room\":\"Bedroom\",\"SET_TEMPERATURE-value\":17,\"ACTUAL_TEMPERATURE-value\":22.4,\"VALVE_STATE-value\":0,\"BATTERY_STATE-value\":2.7,\"BOOST_STATE-value\":0,\"AUTO_MODE-value\":false,\"CONTROL_MODE-value\":0},{\"name\":\"MEQ1875541\",\"room\":\"Child\",\"SET_TEMPERATURE-value\":18,\"ACTUAL_TEMPERATURE-value\":20.4,\"VALVE_STATE-value\":0,\"BATTERY_STATE-value\":2.7,\"BOOST_STATE-value\":0,\"AUTO_MODE-value\":false,\"CONTROL_MODE-value\":0},{\"name\":\"MEQ1875552\",\"room\":\"Guest Room\",\"SET_TEMPERATURE-value\":20,\"ACTUAL_TEMPERATURE-value\":21.1,\"VALVE_STATE-value\":9,\"BATTERY_STATE-value\":2.8,\"BOOST_STATE-value\":0,\"AUTO_MODE-value\":false,\"CONTROL_MODE-value\":0}]","payloadType":"json","x":190,"y":140,"wires":[["bce4e0bd.d96308"]]},{"id":"bce4e0bd.d96308","type":"change","z":"8ee99e4c.e7fa28","name":"ui_control","rules":[{"t":"set","p":"ui_control","pt":"msg","to":"{\"tabulator\":{\"columnResized\":\"function(column){     var newColumn = {         field: column._column.field,         visible: column._column.visible,         width: column._column.width,         widthFixed: column._column.widthFixed,         widthStyled: column._column.widthStyled     }; this.send({topic:this.config.topic,ui_control:{callback:'columnResized',columnWidths:newColumn}}); }\",\"columnMoved\":\"function(column, columns){     var newColumns=[];     columns.forEach(function (column) {         newColumns.push({'field': column._column.field});     });     this.send({topic:this.config.topic,ui_control:{callback:'columnMoved',columns:newColumns}}); }\",\"groupHeader\":\"function (value, count, data, group) {return value + \\\"<span style='color:#d00; margin-left:10px;'>(\\\" + count + \\\" Termostat\\\"+((count>1) ? \\\"e\\\" : \\\"\\\") + \\\")</span>\\\";}\",\"columns\":[{\"formatterParams\":{\"target\":\"_blank\"},\"title\":\"ROom\",\"field\":\"room\",\"width\":100,\"frozen\":true},{\"formatterParams\":{\"target\":\"_blank\"},\"title\":\"Device\",\"field\":\"name\",\"width\":100,\"align\":\"center\"},{\"formatterParams\":{\"target\":\"_blank\"},\"title\":\"Type\",\"field\":\"deviceType\",\"width\":100,\"align\":\"center\"},{\"formatterParams\":{\"target\":\"_blank\"},\"title\":\"Measurements\",\"columns\":[{\"formatterParams\":{\"target\":\"_blank\"},\"title\":\"target\",\"field\":\"SET_TEMPERATURE-value\",\"formatter\":\"function(cell, formatterParams, onRendered){return cell.getValue()+'°C';}\",\"topCalc\":\"avg\",\"width\":100},{\"formatterParams\":{\"target\":\"_blank\",\"min\":10,\"max\":25,\"color\":[\"blue\",\"green\",\"red\"],\"legend\":\"function (value) {return '&nbsp;&nbsp;'+value+'°C';}\",\"legendColor\":\"#101010\",\"legendAlign\":\"left\"},\"title\":\"current\",\"field\":\"ACTUAL_TEMPERATURE-value\",\"formatter\":\"progress\",\"topCalc\":\"avg\",\"width\":100},{\"formatterParams\":{\"target\":\"_blank\",\"min\":0,\"max\":99,\"color\":[\"gray\",\"orange\",\"red\"],\"legend\":\"function (value) {return (value>0)? '&nbsp;&nbsp;'+value+' %' : '-';}\",\"legendColor\":\"#101010\",\"legendAlign\":\"center\"},\"title\":\"Valve\",\"field\":\"VALVE_STATE-value\",\"formatter\":\"progress\",\"topCalc\":\"max\",\"width\":100},{\"formatterParams\":{\"target\":\"_blank\",\"min\":1.5,\"max\":4.6,\"color\":[\"red\",\"orange\",\"green\"],\"legend\":\"function (value) {return value+' V';}\",\"legendColor\":\"#101010\",\"legendAlign\":\"center\"},\"title\":\"Batt\",\"field\":\"BATTERY_STATE-value\",\"formatter\":\"progress\",\"topCalc\":\"min\",\"width\":100}]},{\"formatterParams\":{\"target\":\"_blank\"},\"title\":\"Settings\",\"columns\":[{\"formatterParams\":{\"target\":\"_blank\",\"min\":0,\"max\":30,\"color\":[\"red\",\"orange\",\"green\"],\"legend\":\"function (value) {     if (value>0)         return \\\"<span style='color:#101010;'>\\\"+value+\\\" min</span>\\\";     else         return \\\"<span style='color:#A0A0A0;'>aus</span>\\\"; }\",\"legendColor\":\"#101010\",\"legendAlign\":\"center\"},\"title\":\"Boost\",\"field\":\"BOOST_STATE-value\",\"formatter\":\"progress\",\"width\":100},{\"formatterParams\":{\"target\":\"_blank\",\"allowEmpty\":true,\"allowTruthy\":true,\"tickElement\":\"<i class='fa fa-clock-o'></i>\",\"crossElement\":\"<i class='fa fa-ban'></i>\"},\"title\":\"Auto\",\"field\":\"AUTO_MODE-value\",\"formatter\":\"tickCross\",\"width\":100,\"align\":\"center\"},{\"formatterParams\":{\"target\":\"_blank\"},\"title\":\"Mode\",\"field\":\"CONTROL_MODE-value\",\"formatter\":\"function(cell, formatterParams, onRendered){     var html=\\\"<i class=\\\\\\\"\\\";     switch(cell.getValue()) {         case 0: html+=\\\"fa fa-calendar-check-o\\\"; break;         case 1: html+=\\\"fa fa-hand-o-up\\\"; break;         case 2: html+=\\\"fa fa-suitcase\\\"; break;         case 3: html+=\\\"fa fa-spinner fa-spin fa-fw\\\"; break;     }     html+='\\\\\\\"></i>';     return html; }\",\"width\":100,\"align\":\"center\"},{\"formatterParams\":{\"target\":\"_blank\"},\"title\":\"Auto\",\"field\":\"AUTO_MODE-value\",\"formatter\":\"tick\",\"width\":100,\"align\":\"center\"}]}],\"layout\":\"fitColumns\",\"movableColumns\":true,\"groupBy\":\"\"},\"customHeight\":12}","tot":"json"}],"action":"","property":"","from":"","to":"","reg":false,"x":336,"y":140,"wires":[["6d74e217.d0410c"]]},{"id":"898f94bb.25099","type":"debug","z":"8ee99e4c.e7fa28","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"true","targetType":"full","x":649,"y":140,"wires":[]},{"id":"6d74e217.d0410c","type":"ui_table","z":"8ee99e4c.e7fa28","group":"585ae877.96e7","name":"Thermostats","order":1,"width":"20","height":"7","columns":[],"outputs":1,"cts":true,"x":499,"y":140,"wires":[["898f94bb.25099"]]},{"id":"f13465dc.31b3d8","type":"s7 out","z":"6a38c0bd.801a9","endpoint":"7b0cef48.67d668","variable":"","name":"","x":300,"y":400,"wires":[]},{"id":"fc816ad5.2ff4b","type":"comment","z":"6a38c0bd.801a9","name":"","info":"[formats](https://github.com/plcpeople/nodes7)","x":500,"y":340,"wires":[]},{"id":"f7fa3901.ea7b6","type":"link in","z":"6a38c0bd.801a9","name":"tos7","links":["3c110f69.9153c","d202e6bb.0f799"],"x":175,"y":400,"wires":[["f13465dc.31b3d8","bcd75560.ac5d8"]]},{"id":"37cdcf89.621af","type":"inject","z":"6a38c0bd.801a9","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"},{"p":"variable","v":"MODULES[0].STA","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"512","payloadType":"num","x":130,"y":360,"wires":[["f13465dc.31b3d8"]]},{"id":"a121e859.15c96","type":"function","z":"d5e4d39c.6d5aa8","name":"","func":"let modul = Number.parseInt(msg.topic.substring(3),10); \nlet submodul = msg.row;\nlet varname = `MODULES[${modul}].STA`;\nlet value = 0b100000000000 >> submodul;\nmsg.payload = value;\nmsg.variable = varname;\nreturn msg;","outputs":1,"noerr":0,"initialize":"","finalize":"","x":695,"y":300,"wires":[["3c110f69.9153c"]],"l":false},{"id":"3c110f69.9153c","type":"link out","z":"d5e4d39c.6d5aa8","name":"frommodulessta","links":["f7fa3901.ea7b6"],"x":795,"y":360,"wires":[]},{"id":"bcd75560.ac5d8","type":"debug","z":"6a38c0bd.801a9","name":"","active":false,"tosidebar":true,"console":false,"tostatus":false,"complete":"true","targetType":"full","statusVal":"","statusType":"auto","x":265,"y":360,"wires":[],"l":false},{"id":"a9aded68.89c15","type":"function","z":"d5e4d39c.6d5aa8","name":"tosubmoduls","func":"const submodulecfg = global.get (\"plc1.submodule\");\nconst chcfg = global.get (\"plc1.ch_cfg\");\nconst chhmicfg = global.get (\"plc1.ch_hmi\");\nconst submodulebuf = {}; \nlet val, adr, adrw, mask, bias;\nif (!submodulecfg || !chcfg) return null;\nconst buf = Buffer.from(msg.payload);\nfor (const prop in submodulecfg){\n    type = submodulecfg[prop].type;\n    adrw = submodulecfg[prop].adr;\n    adr = adrw*2;\n    if (prop === 'CH') {\n        val = [];\n        for (let i=0; i<16; i++){\n            bias = i * 4;\n            val [i] = {STA : buf.readUInt16BE(adr + bias),\n                   VALi : buf.readUInt16BE(adr + bias + 2),\n            };\n            for (const prop1 in chcfg){\n                if (chcfg[prop1].type === 'BOOL') {\n                    mask = 1 << chcfg[prop1].bit;\n                    val[i][prop1] = (val[i].STA & mask) !== 0; \n                }          \n            } \n        }\n    } else {\n        switch (type) {\n            case 'UINT':\n                //to fututure chck protocol type\n                val = buf.readUInt16BE(adr);\n                break;\n            case 'INT':\n                val = buf.readInt16BE(adr);\n                break;\n        }\n    }    \n    submodulebuf[prop] = {\n    decsr: submodulecfg[prop].descr,\n    val: val,\n    type: type\n    }      \n    //console.log(`${prop}`);\n}\nglobal.set (\"plc1.submodulebuf\", submodulebuf);\nmsg.payload = submodulebuf;\nmsg.topic = \"submodulebuf\";\nreturn msg;","outputs":1,"noerr":0,"initialize":"","finalize":"","x":250,"y":380,"wires":[["36759223.869096"]]},{"id":"8948ac1c.f196d","type":"ui_table","z":"d5e4d39c.6d5aa8","group":"c5ddeb01.8712a8","name":"","order":1,"width":10,"height":16,"columns":[],"outputs":1,"cts":true,"x":590,"y":380,"wires":[["e938a4a.e096158"]]},{"id":"36759223.869096","type":"function","z":"d5e4d39c.6d5aa8","name":"headers","func":"msg.ui_control = {tabulator: {\n    columnVertAlign:\"bottom\", //align header contents to bottom of cell\n    columns: [\n    {title:'CH', field:'chname', align:\"left\", width:50,  formatter: 'function(cell, formatterParams, onRendered){let smbl = cell.getValue()[0]; cell.getElement().style.backgroundColor = (smbl===\">\") ? \"aqua\" : \"LightGrey\"; return cell.getValue()}'}, \n    {title:\"VAL\", field:'vali', align:\"left\", width:50, formatter: 'function(cell, formatterParams, onRendered){cell.getElement().style.backgroundColor = \"LightGrey\"; return cell.getValue()}'},\n    {title:\"V\", field:'VAL', align:\"left\", formatter:\"color\", width:5},\n    {title:\"R\", field:'VRAW', align:\"left\", formatter:\"color\", width:5},\n    {title:\"L\", field:'ULNK', align:\"left\", formatter:\"color\", width:5},\n    {title:\"E\", field:'MERR', align:\"left\", formatter:\"color\", width:5},\n    {title:\"EB\", field:'BRK', align:\"left\", formatter:\"color\", width:5},\n    {title:\"ES\", field:'SHRT', align:\"left\", formatter:\"color\", width:5},\n    {title:\"F\", field:'FRC', align:\"left\", formatter:\"color\", width:5},\n    {title:\"S\", field:'SML', align:\"left\", formatter:\"color\", width:5},\n    ]}};    \nreturn msg;\n\n","outputs":1,"noerr":0,"initialize":"","finalize":"","x":355,"y":380,"wires":[["b962bf3.f63644"]],"l":false},{"id":"b962bf3.f63644","type":"function","z":"d5e4d39c.6d5aa8","name":"map","func":"let table = [];\n//номер каналу, значення, VAL, VRAW, ULNK, MERR, BRK, SHRT, FRC, SML\nlet chname, prefix; \nswitch (msg.payload.TYPE.val) {\n   case 0:\n    prefix = ' '; \n    break;\n   case 1:\n    prefix = 'DI';               \n    break;\n   case 2:\n    prefix = 'DO';                   \n    break;\n   case 3:\n    prefix = 'AI';                   \n    break;\n   case 4:\n    prefix = 'AO';                   \n    break;\n   case 5:\n    prefix = 'COM';                   \n    break;\n   default: \n    prefix = ' '; \n    break;           \n}\nfor (let i=0; i< msg.payload.CNT.val;i++){\n   let p = '';\n   if (msg.payload.CH.val[i].INBUF > 0) p = '>';\n   chname = p+prefix + (+msg.payload.STRTNMB.val + i);\n   table [i] = {\n      chname,\n      vali: msg.payload.CH.val[i].VALi,\n      VAL: (msg.payload.CH.val[i].VAL> 0) ? 'lime' : 'LightGrey',\n      VRAW: (msg.payload.CH.val[i].VRAW > 0) ? 'lime' : 'LightGrey',\n      ULNK: (msg.payload.CH.val[i].ULNK >0) ? 'white' : 'LightGrey', \n      MERR:(msg.payload.CH.val[i].MERR >0) ? 'red' : 'LightGrey', \n      BRK: (msg.payload.CH.val[i].BRK > 0) ? 'fuchsia' : 'LightGrey', \n      SHRT: (msg.payload.CH.val[i].SHRT>0) ? 'fuchsia' : 'LightGrey', \n      FRC: (msg.payload.CH.val[i].FRC>0) ? 'navy' : 'LightGrey', \n      SML: (msg.payload.CH.val[i].SML>0) ? 'blue' : 'LightGrey',   \n   }  \n}\nmsg.payload = table;\n\nreturn msg;","outputs":1,"noerr":0,"initialize":"","finalize":"","x":450,"y":380,"wires":[["8948ac1c.f196d"]]},{"id":"e938a4a.e096158","type":"function","z":"d5e4d39c.6d5aa8","name":"","func":"msg.variable = 'SUBMODULE.CMD';\nmsg.payload = msg.row + 1;\nreturn msg;","outputs":1,"noerr":0,"initialize":"","finalize":"","x":695,"y":380,"wires":[["3c110f69.9153c"]],"l":false},{"id":"a7b79741.4049a8","type":"function","z":"d5e4d39c.6d5aa8","name":"headers","func":"msg.ui_control = {tabulator: {\n    columnVertAlign:\"bottom\", //align header contents to bottom of cell\n    columns: [\n    {title:'CH', field:'chname', align:\"left\", width:100,  formatter: 'function(cell, formatterParams, onRendered){let smbl = cell.getValue()[0]; cell.getElement().style.backgroundColor = (smbl===\">\") ? \"aqua\" : \"LightGrey\"; return cell.getValue()}'}, \n    {title:\"VAL\", field:'vali', align:\"left\", width:50, formatter: 'function(cell, formatterParams, onRendered){cell.getElement().style.backgroundColor = \"LightGrey\"; return cell.getValue()}'},\n    {title:\"VAR\", field:'VARID', align:\"left\", width:50, formatter: 'function(cell, formatterParams, onRendered){cell.getElement().style.backgroundColor = \"LightGrey\"; return cell.getValue()}'},\n    {title:\"V\", field:'VAL', align:\"left\", formatter:\"color\", width:5},\n    {title:\"R\", field:'VRAW', align:\"left\", formatter:\"color\", width:5},\n    {title:\"L\", field:'ULNK', align:\"left\", formatter:\"color\", width:5},\n    {title:\"E\", field:'MERR', align:\"left\", formatter:\"color\", width:5},\n    {title:\"EB\", field:'BRK', align:\"left\", formatter:\"color\", width:5},\n    {title:\"ES\", field:'SHRT', align:\"left\", formatter:\"color\", width:5},\n    {title:\"F\", field:'FRC', align:\"left\", formatter:\"color\", width:5},\n    {title:\"S\", field:'SML', align:\"left\", formatter:\"color\", width:5},\n    ]}};    \nreturn msg;\n\n","outputs":1,"noerr":0,"initialize":"","finalize":"","x":355,"y":460,"wires":[["c513f17d.ddd928"]],"l":false},{"id":"c513f17d.ddd928","type":"function","z":"d5e4d39c.6d5aa8","name":"map","func":"let table = [];\n//номер каналу, значення, VAL, VRAW, ULNK, MERR, BRK, SHRT, FRC, SML\nlet chname, prefix; \nswitch (msg.payload.CLSID.val & 0x00F0) {\n   case 0x0:\n    prefix = ' '; \n    break;\n   case 0x10:\n    prefix = 'DI';               \n    break;\n   case 0x20:\n    prefix = 'DO';                   \n    break;\n   case 0x30:\n    prefix = 'AI';                   \n    break;\n   case 0x40:\n    prefix = 'AO';                   \n    break;\n   case 0x50:\n    prefix = 'COM';                   \n    break;\n   default: \n    prefix = ' '; \n    break;           \n}\n\nchname = prefix + msg.payload.ID.val;\ntable [0] = {\n  chname,\n  VARID: msg.payload.VARID.val,\n  vali: msg.payload.VALI.val,\n  VAL: (msg.payload.VAL.val> 0) ? 'lime' : 'LightGrey',\n  VRAW: (msg.payload.VRAW.val > 0) ? 'lime' : 'LightGrey',\n  ULNK: (msg.payload.ULNK.val >0) ? 'white' : 'LightGrey', \n  MERR:(msg.payload.MERR.val >0) ? 'red' : 'LightGrey', \n  BRK: (msg.payload.BRK.val > 0) ? 'fuchsia' : 'LightGrey', \n  SHRT: (msg.payload.SHRT.val>0) ? 'fuchsia' : 'LightGrey', \n  FRC: (msg.payload.FRC.val>0) ? 'navy' : 'LightGrey', \n  SML: (msg.payload.SML.val>0) ? 'blue' : 'LightGrey',   \n}  \nmsg.payload = table;\n\nreturn msg;","outputs":1,"noerr":0,"initialize":"","finalize":"","x":450,"y":460,"wires":[["4385c50c.2f3cf4"]]},{"id":"4385c50c.2f3cf4","type":"ui_table","z":"d5e4d39c.6d5aa8","group":"f7cc47d8.8ed128","name":"","order":1,"width":14,"height":2,"columns":[],"outputs":1,"cts":true,"x":610,"y":460,"wires":[[]]},{"id":"2904181f.af2ee","type":"ui_slider","z":"d5e4d39c.6d5aa8","name":"","label":"slider","tooltip":"","group":"f7cc47d8.8ed128","order":2,"width":0,"height":0,"passthru":false,"outs":"end","topic":"","min":0,"max":"32000","step":1,"x":650,"y":500,"wires":[["7fae5a1f.4b06cc"]]},{"id":"b6d96481.300cc","type":"change","z":"d5e4d39c.6d5aa8","name":"","rules":[{"t":"set","p":"payload","pt":"msg","to":"payload.VALI.val","tot":"msg"}],"action":"","property":"","from":"","to":"","reg":false,"x":555,"y":500,"wires":[["2904181f.af2ee"]],"l":false},{"id":"67767fef.4f0fb","type":"change","z":"d5e4d39c.6d5aa8","name":"","rules":[{"t":"set","p":"payload","pt":"msg","to":"payload.FRC.val","tot":"msg"}],"action":"","property":"","from":"","to":"","reg":false,"x":555,"y":540,"wires":[["1eb3a96b.654fbf","6b2e9a97.f0ad4c"]],"l":false},{"id":"6b2e9a97.f0ad4c","type":"debug","z":"d5e4d39c.6d5aa8","name":"","active":false,"tosidebar":true,"console":false,"tostatus":false,"complete":"true","targetType":"full","statusVal":"","statusType":"auto","x":710,"y":720,"wires":[]},{"id":"c0de2587.1deea8","type":"ui_button","z":"d5e4d39c.6d5aa8","name":"","group":"f7cc47d8.8ed128","order":3,"width":2,"height":1,"passthru":false,"label":"FRC","tooltip":"","color":"","bgcolor":"","icon":"","payload":"769","payloadType":"num","topic":"","x":570,"y":580,"wires":[["d1248315.562b1"]]},{"id":"1eb3a96b.654fbf","type":"ui_led","z":"d5e4d39c.6d5aa8","order":4,"group":"f7cc47d8.8ed128","width":1,"height":1,"label":"","labelPlacement":"left","labelAlignment":"left","colorForValue":[{"color":"#808080","value":"false","valueType":"bool"},{"color":"#00008b","value":"true","valueType":"bool"}],"allowColorForValueInMessage":false,"shape":"circle","showGlow":false,"name":"","x":650,"y":540,"wires":[]},{"id":"95d8b715.eb7598","type":"ui_button","z":"d5e4d39c.6d5aa8","name":"","group":"f7cc47d8.8ed128","order":5,"width":2,"height":1,"passthru":false,"label":"UNFRC","tooltip":"","color":"","bgcolor":"","icon":"","payload":"770","payloadType":"num","topic":"","x":540,"y":620,"wires":[["d1248315.562b1"]]},{"id":"d1248315.562b1","type":"change","z":"d5e4d39c.6d5aa8","name":"","rules":[{"t":"set","p":"variable","pt":"msg","to":"CHBUF.CMD","tot":"str"}],"action":"","property":"","from":"","to":"","reg":false,"x":655,"y":620,"wires":[["3c110f69.9153c"]],"l":false},{"id":"7fae5a1f.4b06cc","type":"change","z":"d5e4d39c.6d5aa8","name":"","rules":[{"t":"set","p":"variable","pt":"msg","to":"CHBUF.VAL","tot":"str"}],"action":"","property":"","from":"","to":"","reg":false,"x":735,"y":500,"wires":[["3c110f69.9153c"]],"l":false},{"id":"c20dad2e.fb9ab8","type":"ui_table","z":"60cc6c68.946404","group":"400331db.f015d","name":"","order":1,"width":"8","height":"1","columns":[],"outputs":0,"cts":false,"x":535,"y":160,"wires":[],"l":false},{"id":"7686d871.39e448","type":"link out","z":"60cc6c68.946404","name":"tobanner","links":["11dc9e31.0f45fa"],"x":595,"y":100,"wires":[]},{"id":"11dc9e31.0f45fa","type":"link in","z":"d5e4d39c.6d5aa8","name":"","links":["7686d871.39e448"],"x":115,"y":240,"wires":[["86f873dc.1fed5"]]},{"id":"86f873dc.1fed5","type":"ui_table","z":"d5e4d39c.6d5aa8","group":"e55006e6.6c052","name":"banner","order":1,"width":"9","height":"1","columns":[],"outputs":0,"cts":false,"x":195,"y":240,"wires":[],"l":false}]
+[
+    {
+        "id": "7cbe35b0.9842cc",
+        "type": "tab",
+        "label": "SYS",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "6a38c0bd.801a9",
+        "type": "tab",
+        "label": "S7",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "60cc6c68.946404",
+        "type": "tab",
+        "label": "PLCFN",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "d5e4d39c.6d5aa8",
+        "type": "tab",
+        "label": "chanels",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "8ee99e4c.e7fa28",
+        "type": "tab",
+        "label": "Flow 3",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "2e7c0ab1.757bb6",
+        "type": "tab",
+        "label": "real plc",
+        "disabled": true,
+        "info": ""
+    },
+    {
+        "id": "7cd8b328.dccc34",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": true,
+        "info": ""
+    },
+    {
+        "id": "f0a3869a.177bb8",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": true,
+        "info": ""
+    },
+    {
+        "id": "3548963e.888d6a",
+        "type": "s7 endpoint",
+        "z": "7cd8b328.dccc34",
+        "transport": "iso-on-tcp",
+        "address": "192.168.10.103",
+        "port": "102",
+        "rack": "0",
+        "slot": "1",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapter": "",
+        "busaddr": "2",
+        "cycletime": "1000",
+        "timeout": "1000",
+        "name": "PLCSIM",
+        "vartable": [
+            {
+                "addr": "DB1,I0",
+                "name": "Var0"
+            },
+            {
+                "addr": "DB1,I1",
+                "name": "Var1"
+            },
+            {
+                "addr": "DB1,I2",
+                "name": "Var2"
+            },
+            {
+                "addr": "DB1,I3",
+                "name": "Var3"
+            },
+            {
+                "addr": "DB1,I4",
+                "name": "Var4"
+            },
+            {
+                "addr": "DB1,I5",
+                "name": "Var5"
+            },
+            {
+                "addr": "DB1,I6",
+                "name": "Var6"
+            },
+            {
+                "addr": "DB1,I7",
+                "name": "Var7"
+            },
+            {
+                "addr": "DB1,I8",
+                "name": "Var8"
+            },
+            {
+                "addr": "DB1,I9",
+                "name": "Var9"
+            }
+        ]
+    },
+    {
+        "id": "7b0cef48.67d668",
+        "type": "s7 endpoint",
+        "transport": "iso-on-tcp",
+        "address": "127.0.0.1",
+        "port": "102",
+        "rack": "0",
+        "slot": "1",
+        "localtsaphi": "01",
+        "localtsaplo": "00",
+        "remotetsaphi": "01",
+        "remotetsaplo": "00",
+        "connmode": "rack-slot",
+        "adapter": "",
+        "busaddr": "2",
+        "cycletime": "1000",
+        "timeout": "1000",
+        "name": "S7-1200",
+        "vartable": [
+            {
+                "addr": "DB1,BYTE0.100",
+                "name": "PLCFG"
+            },
+            {
+                "addr": "DB5,BYTE0.256",
+                "name": "MODULES"
+            },
+            {
+                "addr": "DB3,BYTE0.12",
+                "name": "CHBUF"
+            },
+            {
+                "addr": "DB3,BYTE12.72",
+                "name": "SUBMODULE"
+            },
+            {
+                "addr": "DB5,WORD0",
+                "name": "MODULES[0].STA"
+            },
+            {
+                "addr": "DB5,WORD16",
+                "name": "MODULES[1].STA"
+            },
+            {
+                "addr": "DB5,WORD32",
+                "name": "MODULES[2].STA"
+            },
+            {
+                "addr": "DB5,WORD48",
+                "name": "MODULES[3].STA"
+            },
+            {
+                "addr": "DB5,WORD64",
+                "name": "MODULES[4].STA"
+            },
+            {
+                "addr": "DB5,WORD80",
+                "name": "MODULES[5].STA"
+            },
+            {
+                "addr": "DB5,WORD96",
+                "name": "MODULES[6].STA"
+            },
+            {
+                "addr": "DB5,WORD112",
+                "name": "MODULES[7].STA"
+            },
+            {
+                "addr": "DB5,WORD128",
+                "name": "MODULES[8].STA"
+            },
+            {
+                "addr": "DB5,WORD144",
+                "name": "MODULES[9].STA"
+            },
+            {
+                "addr": "DB5,WORD160",
+                "name": "MODULES[10].STA"
+            },
+            {
+                "addr": "DB5,WORD176",
+                "name": "MODULES[11].STA"
+            },
+            {
+                "addr": "DB5,WORD192",
+                "name": "MODULES[12].STA"
+            },
+            {
+                "addr": "DB5,WORD208",
+                "name": "MODULES[13].STA"
+            },
+            {
+                "addr": "DB5,WORD224",
+                "name": "MODULES[14].STA"
+            },
+            {
+                "addr": "DB5,WORD240",
+                "name": "MODULES[15].STA"
+            },
+            {
+                "addr": "DB3,WORD18",
+                "name": "SUBMODULE.CMD"
+            },
+            {
+                "addr": "DB3,WORD6",
+                "name": "CHBUF.CMD"
+            },
+            {
+                "addr": "DB3,WORD8",
+                "name": "CHBUF.VAL"
+            }
+        ]
+    },
+    {
+        "id": "887da873.2fd148",
+        "type": "ui_tab",
+        "name": "PLC",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "5475c407.345374",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "true",
+            "allowSwipe": "false",
+            "lockMenu": "true",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 40,
+                "sy": 40,
+                "gx": 3,
+                "gy": 3,
+                "cx": 1,
+                "cy": 1,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "b722e82f.c65448",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "test.mosquitto.org",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "400331db.f015d",
+        "type": "ui_group",
+        "name": "banner",
+        "tab": "887da873.2fd148",
+        "order": 1,
+        "disp": false,
+        "width": "8",
+        "collapse": false
+    },
+    {
+        "id": "b21cecb6.492258",
+        "type": "ui_group",
+        "name": "tags1",
+        "tab": "887da873.2fd148",
+        "order": 3,
+        "disp": true,
+        "width": 5,
+        "collapse": false
+    },
+    {
+        "id": "66385b7e.c49274",
+        "type": "ui_group",
+        "name": "tags2",
+        "tab": "887da873.2fd148",
+        "order": 2,
+        "disp": true,
+        "width": "5",
+        "collapse": true
+    },
+    {
+        "id": "2f10bcc4.607064",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "66385b7e.c49274",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "fed38678.421bf8",
+        "type": "ui_tab",
+        "name": "CHS",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "e55006e6.6c052",
+        "type": "ui_group",
+        "name": "modules",
+        "tab": "fed38678.421bf8",
+        "order": 2,
+        "disp": false,
+        "width": "30",
+        "collapse": false
+    },
+    {
+        "id": "585ae877.96e7",
+        "type": "ui_group",
+        "name": "ui_control",
+        "tab": "6b94a47f.d6a58c",
+        "order": 1,
+        "disp": true,
+        "width": "22",
+        "collapse": false
+    },
+    {
+        "id": "6b94a47f.d6a58c",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "c5ddeb01.8712a8",
+        "type": "ui_group",
+        "name": "канали",
+        "tab": "fed38678.421bf8",
+        "order": 3,
+        "disp": false,
+        "width": "10",
+        "collapse": false
+    },
+    {
+        "id": "f7cc47d8.8ed128",
+        "type": "ui_group",
+        "name": "Вибраний канал",
+        "tab": "fed38678.421bf8",
+        "order": 4,
+        "disp": false,
+        "width": "14",
+        "collapse": false
+    },
+    {
+        "id": "bfe7694c.539358",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "f7cc47d8.8ed128",
+        "order": 6,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "f08bea01.39bfb",
+        "type": "ui_group",
+        "name": "banner",
+        "tab": "fed38678.421bf8",
+        "order": 1,
+        "disp": false,
+        "width": "9",
+        "collapse": false
+    },
+    {
+        "id": "86fd75df.3912c8",
+        "type": "ui_tab",
+        "name": "SYS",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "86eca01d.e019b8",
+        "type": "ui_group",
+        "name": "SYS info",
+        "tab": "86fd75df.3912c8",
+        "order": 1,
+        "disp": true,
+        "width": "28",
+        "collapse": false
+    },
+    {
+        "id": "be703216.8405c8",
+        "type": "s7 in",
+        "z": "7cd8b328.dccc34",
+        "endpoint": "3548963e.888d6a",
+        "mode": "single",
+        "variable": "CHDI[1].STA",
+        "diff": false,
+        "name": "",
+        "x": 210,
+        "y": 40,
+        "wires": [
+            [
+                "6da6addf.b0279c"
+            ]
+        ]
+    },
+    {
+        "id": "6da6addf.b0279c",
+        "type": "debug",
+        "z": "7cd8b328.dccc34",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 420,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "d17237a5.f6ea18",
+        "type": "s7 out",
+        "z": "7cd8b328.dccc34",
+        "endpoint": "3548963e.888d6a",
+        "variable": "CHDI[1].STA",
+        "name": "",
+        "x": 340,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "49cac438.09fa5c",
+        "type": "inject",
+        "z": "7cd8b328.dccc34",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "-1",
+        "payloadType": "num",
+        "x": 150,
+        "y": 160,
+        "wires": [
+            [
+                "b0e3c155.33de4",
+                "d17237a5.f6ea18"
+            ]
+        ]
+    },
+    {
+        "id": "b0e3c155.33de4",
+        "type": "debug",
+        "z": "7cd8b328.dccc34",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 290,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "54bc8de3.d79334",
+        "type": "s7 control",
+        "z": "7cd8b328.dccc34",
+        "endpoint": "3548963e.888d6a",
+        "function": "cycletime",
+        "name": "",
+        "x": 300,
+        "y": 260,
+        "wires": [
+            [
+                "5612f7ee.0597f8"
+            ]
+        ]
+    },
+    {
+        "id": "5612f7ee.0597f8",
+        "type": "debug",
+        "z": "7cd8b328.dccc34",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 500,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "f81b2cd5.92f17",
+        "type": "inject",
+        "z": "7cd8b328.dccc34",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 100,
+        "y": 240,
+        "wires": [
+            [
+                "54bc8de3.d79334"
+            ]
+        ]
+    },
+    {
+        "id": "1e570f4e.b2b749",
+        "type": "s7 control",
+        "z": "7cd8b328.dccc34",
+        "endpoint": "3548963e.888d6a",
+        "function": "trigger",
+        "name": "",
+        "x": 350,
+        "y": 340,
+        "wires": [
+            [
+                "5612f7ee.0597f8"
+            ]
+        ]
+    },
+    {
+        "id": "acfb5d32.c21f2",
+        "type": "inject",
+        "z": "7cd8b328.dccc34",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 160,
+        "y": 340,
+        "wires": [
+            [
+                "1e570f4e.b2b749"
+            ]
+        ]
+    },
+    {
+        "id": "e5bb5eee.22592",
+        "type": "s7 control",
+        "z": "7cd8b328.dccc34",
+        "endpoint": "3548963e.888d6a",
+        "function": "",
+        "name": "",
+        "x": 290,
+        "y": 420,
+        "wires": [
+            [
+                "5612f7ee.0597f8"
+            ]
+        ]
+    },
+    {
+        "id": "f09bcd6f.08c1e8",
+        "type": "inject",
+        "z": "7cd8b328.dccc34",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 100,
+        "y": 400,
+        "wires": [
+            [
+                "e5bb5eee.22592"
+            ]
+        ]
+    },
+    {
+        "id": "8b192894.beb558",
+        "type": "inject",
+        "z": "7cd8b328.dccc34",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 520,
+        "y": 140,
+        "wires": [
+            [
+                "a15a7c01.2c123"
+            ]
+        ]
+    },
+    {
+        "id": "85b296fb.43ac88",
+        "type": "debug",
+        "z": "7cd8b328.dccc34",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 870,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "a15a7c01.2c123",
+        "type": "change",
+        "z": "7cd8b328.dccc34",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 680,
+        "y": 140,
+        "wires": [
+            [
+                "85b296fb.43ac88"
+            ]
+        ]
+    },
+    {
+        "id": "a8666eda.f4a5c",
+        "type": "s7 in",
+        "z": "2e7c0ab1.757bb6",
+        "endpoint": "7b0cef48.67d668",
+        "mode": "single",
+        "variable": "MEA1",
+        "diff": true,
+        "name": "",
+        "x": 170,
+        "y": 100,
+        "wires": [
+            [
+                "7281295f.74b8d"
+            ]
+        ]
+    },
+    {
+        "id": "97745f85.ba2c18",
+        "type": "s7 in",
+        "z": "2e7c0ab1.757bb6",
+        "endpoint": "7b0cef48.67d668",
+        "mode": "single",
+        "variable": "RAMP",
+        "diff": true,
+        "name": "",
+        "x": 170,
+        "y": 200,
+        "wires": [
+            [
+                "d9dafde3.0f62d8"
+            ]
+        ]
+    },
+    {
+        "id": "4bdb12c9.57dfd4",
+        "type": "s7 in",
+        "z": "2e7c0ab1.757bb6",
+        "endpoint": "7b0cef48.67d668",
+        "mode": "single",
+        "variable": "SIN",
+        "diff": true,
+        "name": "",
+        "x": 150,
+        "y": 300,
+        "wires": [
+            [
+                "bacfa615.1dedc8",
+                "145d9ef6.2a5b51"
+            ]
+        ]
+    },
+    {
+        "id": "7281295f.74b8d",
+        "type": "debug",
+        "z": "2e7c0ab1.757bb6",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 370,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "d9dafde3.0f62d8",
+        "type": "debug",
+        "z": "2e7c0ab1.757bb6",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 370,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "bacfa615.1dedc8",
+        "type": "debug",
+        "z": "2e7c0ab1.757bb6",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 370,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "3f2f49a9.c51566",
+        "type": "mqtt out",
+        "z": "2e7c0ab1.757bb6",
+        "name": "",
+        "topic": "NUFT TI4/Variant2/TT101",
+        "qos": "",
+        "retain": "",
+        "broker": "b722e82f.c65448",
+        "x": 590,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "145d9ef6.2a5b51",
+        "type": "change",
+        "z": "2e7c0ab1.757bb6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "(payload + 1) * 50",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 400,
+        "wires": [
+            [
+                "3f2f49a9.c51566"
+            ]
+        ]
+    },
+    {
+        "id": "a8ae4c07.748f9",
+        "type": "inject",
+        "z": "f0a3869a.177bb8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 60,
+        "wires": [
+            [
+                "c12aecce.60fbc"
+            ]
+        ]
+    },
+    {
+        "id": "c12aecce.60fbc",
+        "type": "file in",
+        "z": "f0a3869a.177bb8",
+        "name": "",
+        "filename": "C:\\Users\\san\\.node-red\\projects\\s7tcpip\\flow.json",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "x": 500,
+        "y": 100,
+        "wires": [
+            [
+                "c0cc7335.313d1"
+            ]
+        ]
+    },
+    {
+        "id": "f092704e.6f57e8",
+        "type": "debug",
+        "z": "f0a3869a.177bb8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 590,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "c0cc7335.313d1",
+        "type": "json",
+        "z": "f0a3869a.177bb8",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 130,
+        "y": 180,
+        "wires": [
+            [
+                "7f3d3eeb.b7cf7"
+            ]
+        ]
+    },
+    {
+        "id": "7f3d3eeb.b7cf7",
+        "type": "split",
+        "z": "f0a3869a.177bb8",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 290,
+        "y": 180,
+        "wires": [
+            [
+                "a1a8aaf0.72cc9"
+            ]
+        ]
+    },
+    {
+        "id": "a1a8aaf0.72cc9",
+        "type": "switch",
+        "z": "f0a3869a.177bb8",
+        "name": "",
+        "property": "payload.type",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "s7 endpoint",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 430,
+        "y": 180,
+        "wires": [
+            [
+                "33de73f6.a4a53c"
+            ],
+            [
+                "7c509613.88ec48"
+            ]
+        ]
+    },
+    {
+        "id": "33de73f6.a4a53c",
+        "type": "switch",
+        "z": "f0a3869a.177bb8",
+        "name": "",
+        "property": "payload.name",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "PLCSIM",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 590,
+        "y": 180,
+        "wires": [
+            [
+                "a52471aa.1a3708"
+            ],
+            [
+                "7c509613.88ec48"
+            ]
+        ]
+    },
+    {
+        "id": "a52471aa.1a3708",
+        "type": "function",
+        "z": "f0a3869a.177bb8",
+        "name": "",
+        "func": "msg.payload.vartable = [];\nfor (let i=0; i<10; i++){\n    msg.payload.vartable[i] = {\n        addr : \"DB1,I\" + i , \n        name : \"Var\" + i \n    };\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 680,
+        "y": 240,
+        "wires": [
+            [
+                "7c509613.88ec48"
+            ]
+        ]
+    },
+    {
+        "id": "7c509613.88ec48",
+        "type": "join",
+        "z": "f0a3869a.177bb8",
+        "name": "",
+        "mode": "auto",
+        "build": "string",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": "false",
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "x": 540,
+        "y": 320,
+        "wires": [
+            [
+                "3038704d.495ef"
+            ]
+        ]
+    },
+    {
+        "id": "3038704d.495ef",
+        "type": "json",
+        "z": "f0a3869a.177bb8",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 370,
+        "y": 380,
+        "wires": [
+            [
+                "4dbcafd0.f86a3"
+            ]
+        ]
+    },
+    {
+        "id": "4dbcafd0.f86a3",
+        "type": "file",
+        "z": "f0a3869a.177bb8",
+        "name": "",
+        "filename": "C:\\Users\\san\\.node-red\\projects\\s7tcpip\\flow.json",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 310,
+        "y": 480,
+        "wires": [
+            [
+                "f092704e.6f57e8"
+            ]
+        ]
+    },
+    {
+        "id": "3d03536f.c449bc",
+        "type": "s7 in",
+        "z": "6a38c0bd.801a9",
+        "endpoint": "7b0cef48.67d668",
+        "mode": "single",
+        "variable": "PLCFG",
+        "diff": true,
+        "name": "",
+        "x": 110,
+        "y": 120,
+        "wires": [
+            [
+                "6b2879a9.faa7d8"
+            ]
+        ]
+    },
+    {
+        "id": "3413756.e94040a",
+        "type": "inject",
+        "z": "60cc6c68.946404",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 95,
+        "y": 60,
+        "wires": [
+            [
+                "1b4df219.13aede"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "1d5b0bad.2cde14",
+        "type": "file in",
+        "z": "60cc6c68.946404",
+        "name": "json",
+        "filename": "",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "x": 235,
+        "y": 60,
+        "wires": [
+            [
+                "d9fcb95.707fd48"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "1b4df219.13aede",
+        "type": "function",
+        "z": "60cc6c68.946404",
+        "name": "",
+        "func": "msg.filename = global.get ('sys.jsonpath') + 'plccfg.json';\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 175,
+        "y": 60,
+        "wires": [
+            [
+                "1d5b0bad.2cde14"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "8308e59f.41e048",
+        "type": "debug",
+        "z": "60cc6c68.946404",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 515,
+        "y": 60,
+        "wires": [],
+        "l": false
+    },
+    {
+        "id": "d9fcb95.707fd48",
+        "type": "json",
+        "z": "60cc6c68.946404",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 295,
+        "y": 60,
+        "wires": [
+            [
+                "43eb5f40.5ccae8"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "231d1c57.aea134",
+        "type": "link in",
+        "z": "60cc6c68.946404",
+        "name": "toplcfn",
+        "links": [
+            "e41aacd.6e8375"
+        ],
+        "x": 65,
+        "y": 180,
+        "wires": [
+            [
+                "cfd28ee5.798be8",
+                "b745d249.212aa8"
+            ]
+        ]
+    },
+    {
+        "id": "43eb5f40.5ccae8",
+        "type": "change",
+        "z": "60cc6c68.946404",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "plc1.plccfg",
+                "pt": "global",
+                "to": "payload.plccfg",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 355,
+        "y": 60,
+        "wires": [
+            [
+                "8308e59f.41e048"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "b745d249.212aa8",
+        "type": "function",
+        "z": "60cc6c68.946404",
+        "name": "toplcrt",
+        "func": "const plccfg = global.get (\"plc1.plccfg\");\nconst plcrt = {}; \nlet val, adr, adrw, mask;\nif (!plccfg) return null;\nconst buf = Buffer.from(msg.payload);\nfor (const prop in plccfg){\n    type = plccfg[prop].type;\n    adrw = plccfg[prop].adr;\n    adr = adrw*2;\n    if (prop === 'NOW') {\n    \n    } else if (prop === 'SHIFTPARA'){\n        \n    } else {    \n        switch (type) {\n            case 'UINT':\n                //to fututure chck protocol type\n                val = buf.readUInt16BE(adr);\n                break;\n            case 'INT':\n                val = buf.readInt16BE(adr);\n                break;\n            case 'UDINT':\n                val = buf.readUInt32BE(adr);\n                break;\n            case 'DINT':\n                val = buf.readInt32BE(adr);\n                break;\n            case 'REAL':\n                val = buf.readFloatBE(adr);\n                break;\n            case 'BOOL':\n                if (adrw === 2) adrw=38;//perm\n                if (adrw === 8) adrw=39;\n                adr = adrw * 2;\n                bit = plccfg[prop].bit;\n                mask = 1 << bit;\n                val = ((buf.readInt16BE(adr) & mask) !== 0);\n                break;\n        }    \n    }\n    plcrt[prop] = {\n        decsr: plccfg[prop].descr,\n        val: val,\n        type: type\n    }      \n    //console.log(`${prop}`);\n}\nglobal.set (\"plc1.plcrt\", plcrt);\nmsg.payload = plcrt;\nmsg.topic = \"plcrt\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 200,
+        "y": 180,
+        "wires": [
+            [
+                "a787a538.e310c",
+                "cfd28ee5.798be8",
+                "6e50e8d9.5cca88"
+            ]
+        ]
+    },
+    {
+        "id": "e41aacd.6e8375",
+        "type": "link out",
+        "z": "6a38c0bd.801a9",
+        "name": "plcfroms7",
+        "links": [
+            "231d1c57.aea134"
+        ],
+        "x": 315,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "cfd28ee5.798be8",
+        "type": "debug",
+        "z": "60cc6c68.946404",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 115,
+        "y": 240,
+        "wires": [],
+        "l": false
+    },
+    {
+        "id": "a787a538.e310c",
+        "type": "function",
+        "z": "60cc6c68.946404",
+        "name": "leds",
+        "func": "let inp = msg.payload;\nlet M = (inp.DISP.val > 0) ;\nlet F = (inp.FRC.val > 0) ;\nlet F0 = (inp.FRC0.val > 0) ;\nlet F1 = (inp.FRC1.val > 0) ;\nlet F2 = (inp.FRC2.val > 0) ;\nlet S = (inp.SML.val > 0) ;\nlet W = (inp.WRN.val > 0) ;\nlet A = (inp.ALM.val > 0) ;\nlet E = (inp.BAD.val > 0) ;\n\nlet ca = inp.CNTALM_PERM.val;\nlet cw = inp.CNTWRN_PERM.val;\nlet cb = inp.CNTBAD_PERM.val;\nlet cf = inp.CNTFRC_PERM.val;\nlet cm = inp.CNTMAN_PERM.val;\n\nmsg.ui_control = {tabulator: {\n    columnVertAlign:\"bottom\", //align header contents to bottom of cell\n    headerVisible:false,\n    columns: [\n    {title:\"M\", field:'M', align:\"center\", width:2, formatter: 'function(cell, formatterParams, onRendered){let v = cell.getValue(); cell.getElement().style.backgroundColor = (v>0) ? \"blue\" : \"LightGrey\"; return \"M\"}'},\n    {title:\"F0\", field:'F0', align:\"center\", width:2, formatter: 'function(cell, formatterParams, onRendered){let v = cell.getValue(); cell.getElement().style.backgroundColor = (v>0) ? \"DarkBlue\" : \"LightGrey\"; cell.getElement().style.color = (v>0) ? \"white\" : \"black\"; return \"F0\"}'},\n    {title:\"F1\", field:'F1', align:\"center\", width:2, formatter: 'function(cell, formatterParams, onRendered){let v = cell.getValue(); cell.getElement().style.backgroundColor = (v>0) ? \"DarkBlue\" : \"LightGrey\"; cell.getElement().style.color = (v>0) ? \"white\" : \"black\"; return \"F1\"}'},\n    {title:\"F2\", field:'F2', align:\"center\", width:2, formatter: 'function(cell, formatterParams, onRendered){let v = cell.getValue(); cell.getElement().style.backgroundColor = (v>0) ? \"DarkBlue\" : \"LightGrey\"; cell.getElement().style.color = (v>0) ? \"white\" : \"black\"; return \"F2\"}'},\n    {title:\"S\", field:'S', align:\"center\", width:2, formatter: 'function(cell, formatterParams, onRendered){let v = cell.getValue(); cell.getElement().style.backgroundColor = (v>0) ? \"aqua\" : \"LightGrey\"; return \"S\"}'},\n    {title:\"W\", field:'W', align:\"center\", width:2, formatter: 'function(cell, formatterParams, onRendered){let v = cell.getValue(); cell.getElement().style.backgroundColor = (v>0) ? \"yellow\" : \"LightGrey\"; return \"W\"}'},\n    {title:\"A\", field:'A', align:\"center\", width:2, formatter: 'function(cell, formatterParams, onRendered){let v = cell.getValue(); cell.getElement().style.backgroundColor = (v>0) ? \"red\" : \"LightGrey\"; return \"A\"}'},\n    {title:\"E\", field:'E', align:\"center\", width:2, formatter: 'function(cell, formatterParams, onRendered){let v = cell.getValue(); cell.getElement().style.backgroundColor = (v>0) ? \"gold\" : \"LightGrey\"; return \"E\"}'},\n    \n    ]}}\nmsg.payload = [{M,F0,F1,F2,S,W,A,E}];   \n\nreturn msg;\n\n/*\nlet M = (msg.payload.DISP.val > 0) ? 'blue' : 'LightGrey';\nlet F = (msg.payload.FRC.val > 0) ? 'DarkBlue' : 'LightGrey';\nlet S = (msg.payload.SML.val > 0) ? 'cyan' : 'LightGrey';\nlet W = (msg.payload.WRN.val > 0) ? 'yellow' : 'LightGrey';\nlet A = (msg.payload.ALM.val > 0) ? 'red' : 'LightGrey';\nlet E = (msg.payload.BAD.val > 0) ? 'gold' : 'LightGrey';\n\n\n- М – це наявність хоча б одного виконавчого механізму в ручному режимі, темно-синій \n- F – наявність хоча б одного форсування, темно-синій\n- S – наявність хоча б одного об'єкта (CM/EM/UNIT) в режимі імітації, блакитний \n- W – наявність хоча б однієї тривоги рівня \"попередження\" (моргає при неквітованій), жовтий \n- A – наявність хоча б однієї тривоги рівня \"аварія\" (моргає при неквітованій), червоний. \n- E – наявність хоча б однієї тривоги рівня \"недостовірність\" (моргає при неквітованій), рожевий. \nДодатковими бітами статусу для відображення також можуть бути: \n\n- наявність хоча б одного біта недостовірності, \n- наявність хоча б однієї відключеної змінної (виведеної з обслуговування), \n- \"процедура технологічної комірки в роботі/паузі/утримання\", \n- \"апарат в роботі/паузі/утримання\", \n- \"CIP в роботі/паузі/утримання\".\n*/",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 180,
+        "wires": [
+            [
+                "c20dad2e.fb9ab8",
+                "7686d871.39e448"
+            ]
+        ]
+    },
+    {
+        "id": "cafe1ef2.d0ed1",
+        "type": "ui_table",
+        "z": "60cc6c68.946404",
+        "d": true,
+        "group": "400331db.f015d",
+        "name": "",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "columns": [
+            {
+                "field": "M",
+                "title": "M",
+                "width": "15%",
+                "align": "left",
+                "formatter": "color",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "F",
+                "title": "F",
+                "width": "15%",
+                "align": "left",
+                "formatter": "color",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "S",
+                "title": "S",
+                "width": "15%",
+                "align": "left",
+                "formatter": "color",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "W",
+                "title": "W",
+                "width": "15%",
+                "align": "left",
+                "formatter": "color",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "A",
+                "title": "A",
+                "width": "15%",
+                "align": "left",
+                "formatter": "color",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "E",
+                "title": "E",
+                "width": "15%",
+                "align": "left",
+                "formatter": "color",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 370,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "f4bd9105.3267d",
+        "type": "ui_table",
+        "z": "60cc6c68.946404",
+        "group": "b21cecb6.492258",
+        "name": "",
+        "order": 1,
+        "width": "4",
+        "height": "30",
+        "columns": [],
+        "outputs": 0,
+        "cts": false,
+        "x": 495,
+        "y": 220,
+        "wires": [],
+        "l": false
+    },
+    {
+        "id": "6e50e8d9.5cca88",
+        "type": "function",
+        "z": "60cc6c68.946404",
+        "name": "allnumeric",
+        "func": "let msg1 = {payload:[]};\nlet msg2 = {payload:[]};\nlet msg3 = {payload:[]};\nlet i1=0, i2 =0, i3=0;\nfor (const prop in msg.payload){\n    if (msg.payload[prop].type === 'BOOL'){\n        msg1.payload[i1] = {'name' : prop, 'val' : msg.payload[prop].val }\n        i1++;\n    } else {\n        msg2.payload[i2] = {'name' : prop, 'val' : msg.payload[prop].val }\n        i2++;\n    }\n}    \nreturn [msg1, msg2, msg3];",
+        "outputs": 3,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 260,
+        "wires": [
+            [
+                "f4bd9105.3267d",
+                "442b2ee.75f245"
+            ],
+            [
+                "10209233.ba5a56"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "442b2ee.75f245",
+        "type": "debug",
+        "z": "60cc6c68.946404",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "10209233.ba5a56",
+        "type": "ui_table",
+        "z": "60cc6c68.946404",
+        "group": "66385b7e.c49274",
+        "name": "",
+        "order": 1,
+        "width": "4",
+        "height": "26",
+        "columns": [],
+        "outputs": 0,
+        "cts": false,
+        "x": 495,
+        "y": 260,
+        "wires": [],
+        "l": false
+    },
+    {
+        "id": "6b2879a9.faa7d8",
+        "type": "change",
+        "z": "6a38c0bd.801a9",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "protocol",
+                "pt": "msg",
+                "to": "S7",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 255,
+        "y": 120,
+        "wires": [
+            [
+                "e41aacd.6e8375"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "40e765e7.df381c",
+        "type": "inject",
+        "z": "60cc6c68.946404",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 95,
+        "y": 100,
+        "wires": [
+            []
+        ],
+        "l": false
+    },
+    {
+        "id": "dccc1b47.fe7ec8",
+        "type": "change",
+        "z": "60cc6c68.946404",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "jsonpath",
+                "pt": "global",
+                "to": "G:/san/PLCFramework/GitVer/json/",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 175,
+        "y": 100,
+        "wires": [
+            []
+        ],
+        "l": false
+    },
+    {
+        "id": "72b18591.13adfc",
+        "type": "inject",
+        "z": "d5e4d39c.6d5aa8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 95,
+        "y": 60,
+        "wires": [
+            [
+                "a70543a7.3c46a",
+                "fceb299d.262fb",
+                "b61f547e.feb29",
+                "359bcf66.6f771"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "4d59a2c6.8d9644",
+        "type": "file in",
+        "z": "d5e4d39c.6d5aa8",
+        "name": "json",
+        "filename": "",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "x": 235,
+        "y": 60,
+        "wires": [
+            [
+                "d96c7842.d263e8"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "a70543a7.3c46a",
+        "type": "function",
+        "z": "d5e4d39c.6d5aa8",
+        "name": "",
+        "func": "msg.filename = global.get ('sys.jsonpath') + 'ch_cfg.json';\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 175,
+        "y": 60,
+        "wires": [
+            [
+                "4d59a2c6.8d9644"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "1bdffbac.c0a3c4",
+        "type": "debug",
+        "z": "d5e4d39c.6d5aa8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 515,
+        "y": 60,
+        "wires": [],
+        "l": false
+    },
+    {
+        "id": "d96c7842.d263e8",
+        "type": "json",
+        "z": "d5e4d39c.6d5aa8",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 295,
+        "y": 60,
+        "wires": [
+            [
+                "a8e09704.ad6268"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "a8e09704.ad6268",
+        "type": "change",
+        "z": "d5e4d39c.6d5aa8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "plc1.ch_cfg",
+                "pt": "global",
+                "to": "payload.ch_cfg",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 355,
+        "y": 60,
+        "wires": [
+            [
+                "1bdffbac.c0a3c4"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "fceb299d.262fb",
+        "type": "function",
+        "z": "d5e4d39c.6d5aa8",
+        "name": "",
+        "func": "msg.filename = global.get ('sys.jsonpath') + 'ch_hmi.json';\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 175,
+        "y": 100,
+        "wires": [
+            [
+                "a3f2acfd.a5c27"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "b61f547e.feb29",
+        "type": "function",
+        "z": "d5e4d39c.6d5aa8",
+        "name": "",
+        "func": "msg.filename = global.get ('sys.jsonpath') + 'module.json';\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 175,
+        "y": 140,
+        "wires": [
+            [
+                "ceb49178.1f2c28"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "359bcf66.6f771",
+        "type": "function",
+        "z": "d5e4d39c.6d5aa8",
+        "name": "",
+        "func": "msg.filename = global.get ('sys.jsonpath') + 'submodule.json';\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 175,
+        "y": 180,
+        "wires": [
+            [
+                "8b2d3e33.5eedf8"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "a3f2acfd.a5c27",
+        "type": "file in",
+        "z": "d5e4d39c.6d5aa8",
+        "name": "json",
+        "filename": "",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "x": 235,
+        "y": 100,
+        "wires": [
+            [
+                "94ce6d13.e22f"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "94ce6d13.e22f",
+        "type": "json",
+        "z": "d5e4d39c.6d5aa8",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 295,
+        "y": 100,
+        "wires": [
+            [
+                "728ced26.d06ae4"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "728ced26.d06ae4",
+        "type": "change",
+        "z": "d5e4d39c.6d5aa8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "plc1.ch_hmi",
+                "pt": "global",
+                "to": "payload.ch_hmi",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 355,
+        "y": 100,
+        "wires": [
+            [
+                "1bdffbac.c0a3c4"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "ceb49178.1f2c28",
+        "type": "file in",
+        "z": "d5e4d39c.6d5aa8",
+        "name": "json",
+        "filename": "",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "x": 235,
+        "y": 140,
+        "wires": [
+            [
+                "9f3bcde6.88726"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "9f3bcde6.88726",
+        "type": "json",
+        "z": "d5e4d39c.6d5aa8",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 295,
+        "y": 140,
+        "wires": [
+            [
+                "cbfc380.174bcc8"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "cbfc380.174bcc8",
+        "type": "change",
+        "z": "d5e4d39c.6d5aa8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "plc1.module",
+                "pt": "global",
+                "to": "payload.module",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 355,
+        "y": 140,
+        "wires": [
+            [
+                "1bdffbac.c0a3c4"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "8b2d3e33.5eedf8",
+        "type": "file in",
+        "z": "d5e4d39c.6d5aa8",
+        "name": "json",
+        "filename": "",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "x": 235,
+        "y": 180,
+        "wires": [
+            [
+                "70ed24d3.a4c19c"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "70ed24d3.a4c19c",
+        "type": "json",
+        "z": "d5e4d39c.6d5aa8",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 295,
+        "y": 180,
+        "wires": [
+            [
+                "efcb8f7a.ce585"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "efcb8f7a.ce585",
+        "type": "change",
+        "z": "d5e4d39c.6d5aa8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "plc1.submodule",
+                "pt": "global",
+                "to": "payload.submodule",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 355,
+        "y": 180,
+        "wires": [
+            [
+                "1bdffbac.c0a3c4"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "ae4b1acd.1d33b8",
+        "type": "s7 in",
+        "z": "6a38c0bd.801a9",
+        "endpoint": "7b0cef48.67d668",
+        "mode": "single",
+        "variable": "MODULES",
+        "diff": true,
+        "name": "",
+        "x": 120,
+        "y": 180,
+        "wires": [
+            [
+                "2bd7a237.9d5656"
+            ]
+        ]
+    },
+    {
+        "id": "2bd7a237.9d5656",
+        "type": "change",
+        "z": "6a38c0bd.801a9",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "protocol",
+                "pt": "msg",
+                "to": "S7",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 215,
+        "y": 180,
+        "wires": [
+            [
+                "661dfd21.48bb14"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "65d22cac.943bc4",
+        "type": "link in",
+        "z": "d5e4d39c.6d5aa8",
+        "name": "tochanels",
+        "links": [
+            "661dfd21.48bb14"
+        ],
+        "x": 115,
+        "y": 300,
+        "wires": [
+            [
+                "e5b78f8e.3a24c8"
+            ]
+        ]
+    },
+    {
+        "id": "661dfd21.48bb14",
+        "type": "link out",
+        "z": "6a38c0bd.801a9",
+        "name": "chansfroms7",
+        "links": [
+            "65d22cac.943bc4"
+        ],
+        "x": 295,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "e5b78f8e.3a24c8",
+        "type": "function",
+        "z": "d5e4d39c.6d5aa8",
+        "name": "tomodules",
+        "func": "const plcrt = global.get (\"plc1.plcrt\");\nconst module = global.get (\"plc1.module\");\nconst submodule = global.get (\"plc1.submodule\");\nconst ch_cfg = global.get (\"plc1.ch_cfg\");\nconst ch_hmi = global.get (\"plc1.ch_hmi\");\n\nif (!plcrt || !module || !submodule || !ch_cfg || !ch_hmi) return;\nlet modulscnt = plcrt.MODULSCNT.val;\nif (modulscnt<1) return;\nlet val, adr, adrw, mask, vali;\nlet modules = [];\nconst buf = Buffer.from(msg.payload);\n\nconst modulelength = 8;//in words \nlet bias = 0; //bias for module\nfor (let m = 0; m < modulscnt; m++) {\n    bias = m * modulelength * 2;//in bytes\n    modules [m] = {};\n    for (const prop in module){\n        type = module[prop].type;\n        adrw = module[prop].adr;\n        adr = adrw*2 + bias;\n        switch (prop) {\n        case 'TYPE':\n            vali = buf.readUInt16BE(adr).toString(16); \n            val = [\n                vali[0],\n                vali[1],\n                vali[2],\n                vali[3],                \n            ]\n            break;\n        case 'CHCNTS':\n            vali = buf.readUInt16BE(adr).toString(16); \n            val = [\n                Number.parseInt(vali[0],16) + 1,\n                Number.parseInt(vali[1],16) + 1,\n                Number.parseInt(vali[2],16) + 1,\n                Number.parseInt(vali[3],16) + 1,                \n            ]\n            break;\n        case 'STRTNMB':\n            val = [\n                buf.readUInt16BE(adr),\n                buf.readUInt16BE(adr+2),\n                buf.readUInt16BE(adr+4),\n                buf.readUInt16BE(adr+6),                \n            ]\n            break;\n        case 'STA':\n            vali = buf.readUInt16BE(adr);\n            val = {\n                bad: [\n                (vali & 0b1000) !== 0,\n                (vali & 0b0100) !== 0,\n                (vali & 0b0010) !== 0,\n                (vali & 0b0001) !== 0,\n                ],\n                isbuf: [\n                (vali & 0b10000000) !== 0,\n                (vali & 0b01000000) !== 0,\n                (vali & 0b00100000) !== 0,\n                (vali & 0b00010000) !== 0,\n                ],\n                cmdbuf: [\n                (vali & 0b100000000000) !== 0,\n                (vali & 0b010000000000) !== 0,\n                (vali & 0b001000000000) !== 0,\n                (vali & 0b000100000000) !== 0,\n                ]                \n            }\n            break;            \n        default:\n            switch (type) {\n            case 'UINT':\n                //to fututure chck protocol type\n                val = buf.readUInt16BE(adr);\n                break;\n            case 'INT':\n                //to fututure chck protocol type\n                val = buf.readInt16BE(adr);\n                break;\n            }\n        }\n        modules[m][prop] = {\n        decsr: module[prop].descr,\n        val: val,\n        type: type\n        }    \n    }    \n}\nglobal.set (\"plc1.modules\", modules);\nmsg.payload = modules;\nmsg.topic = \"modules\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 300,
+        "wires": [
+            [
+                "8d3511d4.950e98",
+                "441f9563.d21d84"
+            ]
+        ]
+    },
+    {
+        "id": "1e0c6284.93c0c5",
+        "type": "s7 in",
+        "z": "6a38c0bd.801a9",
+        "endpoint": "7b0cef48.67d668",
+        "mode": "single",
+        "variable": "CHBUF",
+        "diff": true,
+        "name": "",
+        "x": 110,
+        "y": 300,
+        "wires": [
+            [
+                "92c8b02.f14f1d"
+            ]
+        ]
+    },
+    {
+        "id": "4e3c7429.dd3c34",
+        "type": "s7 in",
+        "z": "6a38c0bd.801a9",
+        "endpoint": "7b0cef48.67d668",
+        "mode": "single",
+        "variable": "SUBMODULE",
+        "diff": true,
+        "name": "",
+        "x": 130,
+        "y": 240,
+        "wires": [
+            [
+                "3f0a36f9.14a9ea"
+            ]
+        ]
+    },
+    {
+        "id": "d9f21679.59f4c8",
+        "type": "link in",
+        "z": "d5e4d39c.6d5aa8",
+        "name": "tochbuft",
+        "links": [
+            "997cd263.a43a68"
+        ],
+        "x": 115,
+        "y": 460,
+        "wires": [
+            [
+                "38a1722a.829d46"
+            ]
+        ]
+    },
+    {
+        "id": "50c9126f.e533b4",
+        "type": "link in",
+        "z": "d5e4d39c.6d5aa8",
+        "name": "tosubmodule",
+        "links": [
+            "adf4e9b5.558258"
+        ],
+        "x": 115,
+        "y": 380,
+        "wires": [
+            [
+                "a9aded68.89c15"
+            ]
+        ]
+    },
+    {
+        "id": "997cd263.a43a68",
+        "type": "link out",
+        "z": "6a38c0bd.801a9",
+        "name": "chbuftfroms7",
+        "links": [
+            "d9f21679.59f4c8"
+        ],
+        "x": 275,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "adf4e9b5.558258",
+        "type": "link out",
+        "z": "6a38c0bd.801a9",
+        "name": "submodfroms7",
+        "links": [
+            "50c9126f.e533b4"
+        ],
+        "x": 295,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "92c8b02.f14f1d",
+        "type": "change",
+        "z": "6a38c0bd.801a9",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "protocol",
+                "pt": "msg",
+                "to": "S7",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 215,
+        "y": 300,
+        "wires": [
+            [
+                "997cd263.a43a68"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "3f0a36f9.14a9ea",
+        "type": "change",
+        "z": "6a38c0bd.801a9",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "protocol",
+                "pt": "msg",
+                "to": "S7",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 235,
+        "y": 240,
+        "wires": [
+            [
+                "adf4e9b5.558258"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "38a1722a.829d46",
+        "type": "function",
+        "z": "d5e4d39c.6d5aa8",
+        "name": "tochbuf",
+        "func": "const chcfg = global.get (\"plc1.ch_cfg\");\nconst chbuf = {}; \nlet val, adr, adrw, mask;\nif (!chcfg) return null;\nconst buf = Buffer.from(msg.payload);\nfor (const prop in chcfg){\n    type = chcfg[prop].type;\n    adrw = chcfg[prop].adr;\n    adr = adrw*2;\n    switch (type) {\n        case 'UINT':\n            //to fututure chck protocol type\n            val = buf.readUInt16BE(adr);\n            break;\n        case 'INT':\n            val = buf.readInt16BE(adr);\n            break;\n        case 'BOOL':\n            bit = chcfg[prop].bit;\n            mask = 1 << bit;\n            val = ((buf.readInt16BE(adr) & mask) !== 0);\n            break;\n    }    \n    chbuf[prop] = {\n    decsr: chcfg[prop].descr,\n    val: val,\n    type: type\n    }      \n    //console.log(`${prop}`);\n}\nglobal.set (\"plc1.chbuf\", chbuf);\nmsg.payload = chbuf;\nmsg.topic = \"chbuf\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 260,
+        "y": 460,
+        "wires": [
+            [
+                "a7b79741.4049a8",
+                "67767fef.4f0fb",
+                "b6d96481.300cc",
+                "6b2e9a97.f0ad4c"
+            ]
+        ]
+    },
+    {
+        "id": "35fb3a3f.97491e",
+        "type": "function",
+        "z": "d5e4d39c.6d5aa8",
+        "name": "map",
+        "func": "let table = [{},{},{},{},{},{},{},{}];\nlet i=0;\nfor (const m of msg.payload){\n    let subms = [];\n    for (let j = 0; j < 4; j++) {\n        let prefix = '';\n        subms[j] = {\n            mtypecode: m.TYPE.val[j],\n            strtnmb: m.STRTNMB.val[j],\n            chcnts: m.CHCNTS.val[j],\n            bad: m.STA.val.bad[j],\n            isbuf: m.STA.val.isbuf[j],\n            cmdbuf: m.STA.val.cmdbuf[j]\n        };\n        switch (m.TYPE.val[j]) {\n           case '0':\n            subms[j].mtypestr = ' '; \n            break;\n           case '1':\n            subms[j].mtypestr = 'DI';               \n            break;\n           case '2':\n            subms[j].mtypestr = 'DO';                   \n            break;\n           case '3':\n            subms[j].mtypestr = 'AI';                   \n            break;\n           case '4':\n            subms[j].mtypestr = 'AO';                   \n            break;\n           case '5':\n            subms[j].mtypestr = 'COM';                   \n            break;\n           default: \n            subms[j].mtypestr = ' '; \n            break;           \n        }\n    if (subms[j].isbuf === true) prefix = '>';\n    if (m.TYPE.val[j] >0 ) {\n        table [j]['cfg' + i.toString()] = prefix + subms[j].mtypestr + '(' + m.CHCNTS.val[j] + ')' + ':' + m.STRTNMB.val[j] + '..' + ((+m.STRTNMB.val[j]) + (+m.CHCNTS.val[j]) - 1);\n    } else {\n       table [j]['cfg' + i.toString()] = prefix + '-'; \n    }\n    table [j]['bad' + i.toString()] = (subms[j].bad > 0) ? 'red' : 'LightGrey';        \n    }    \n\n\n    i++;\n}    \nmsg.payload = table;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 470,
+        "y": 300,
+        "wires": [
+            [
+                "36b917b9.6de15"
+            ]
+        ]
+    },
+    {
+        "id": "36b917b9.6de15",
+        "type": "ui_table",
+        "z": "d5e4d39c.6d5aa8",
+        "group": "e55006e6.6c052",
+        "name": "modules",
+        "order": 2,
+        "width": 27,
+        "height": 4,
+        "columns": [],
+        "outputs": 1,
+        "cts": true,
+        "x": 620,
+        "y": 300,
+        "wires": [
+            [
+                "a121e859.15c96"
+            ]
+        ]
+    },
+    {
+        "id": "f76c12bf.432d1",
+        "type": "comment",
+        "z": "d5e4d39c.6d5aa8",
+        "name": "tableui",
+        "info": "[help](https://flows.nodered.org/node/node-red-node-ui-table)\n[tabulator](http://tabulator.info/examples/4.4#column-groups)",
+        "x": 650,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "8d3511d4.950e98",
+        "type": "function",
+        "z": "d5e4d39c.6d5aa8",
+        "name": "headers",
+        "func": "let cntmodules = msg.payload.length; \n\nmsg.ui_control = {tabulator: {\n    columnVertAlign:\"bottom\", //align header contents to bottom of cell\n    columns:[]}};\nfor (let i = 0; i < cntmodules; i++){\n    msg.ui_control.tabulator.columns[i]= {\n        title:i.toString(),\n        align:\"center\",\n        columns:[\n        {title:\"CFG\", field:\"cfg\"+i, align:\"left\", width:100, \n            formatter: 'function(cell, formatterParams, onRendered){let smbl = cell.getValue()[0]; cell.getElement().style.backgroundColor = (smbl===\">\") ? \"aqua\" : \"LightGrey\"; return cell.getValue()}'},\n        {title:\"E\", field:\"bad\"+i, align:\"left\", formatter:\"color\", width:5}\n        ]};    \n}\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 375,
+        "y": 300,
+        "wires": [
+            [
+                "35fb3a3f.97491e"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "9e7bae2d.a3051",
+        "type": "inject",
+        "z": "8ee99e4c.e7fa28",
+        "name": "",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[{\"name\":\"MEQ0451495\",\"room\":\"Bathroom\",\"SET_TEMPERATURE-value\":22,\"ACTUAL_TEMPERATURE-value\":21.8,\"VALVE_STATE-value\":90,\"BATTERY_STATE-value\":2.7,\"BOOST_STATE-value\":0,\"AUTO_MODE-value\":true,\"CONTROL_MODE-value\":0},{\"name\":\"MEQ1875547\",\"room\":\"Living Room\",\"SET_TEMPERATURE-value\":12,\"ACTUAL_TEMPERATURE-value\":16.2,\"VALVE_STATE-value\":0,\"BATTERY_STATE-value\":2.7,\"BOOST_STATE-value\":0,\"AUTO_MODE-value\":false,\"CONTROL_MODE-value\":1},{\"name\":\"MEQ1875538\",\"room\":\"Living Room\",\"SET_TEMPERATURE-value\":18,\"ACTUAL_TEMPERATURE-value\":19.5,\"VALVE_STATE-value\":0,\"BATTERY_STATE-value\":2.6,\"BOOST_STATE-value\":0,\"AUTO_MODE-value\":false,\"CONTROL_MODE-value\":2},{\"name\":\"MEQ0447462\",\"room\":\"Kitchen\",\"SET_TEMPERATURE-value\":17,\"ACTUAL_TEMPERATURE-value\":22.2,\"VALVE_STATE-value\":0,\"BATTERY_STATE-value\":2.7,\"BOOST_STATE-value\":10,\"AUTO_MODE-value\":false,\"CONTROL_MODE-value\":3},{\"name\":\"MEQ1875551\",\"room\":\"Office\",\"SET_TEMPERATURE-value\":18,\"ACTUAL_TEMPERATURE-value\":20.2,\"VALVE_STATE-value\":0,\"BATTERY_STATE-value\":2.7,\"BOOST_STATE-value\":0,\"AUTO_MODE-value\":false,\"CONTROL_MODE-value\":0},{\"name\":\"MEQ0447425\",\"room\":\"Dining Room\",\"SET_TEMPERATURE-value\":19,\"ACTUAL_TEMPERATURE-value\":20.4,\"VALVE_STATE-value\":0,\"BATTERY_STATE-value\":2.7,\"BOOST_STATE-value\":0,\"AUTO_MODE-value\":false,\"CONTROL_MODE-value\":0},{\"name\":\"MEQ1875546\",\"room\":\"Dining Room\",\"SET_TEMPERATURE-value\":20,\"ACTUAL_TEMPERATURE-value\":18.8,\"VALVE_STATE-value\":99,\"BATTERY_STATE-value\":2.7,\"BOOST_STATE-value\":0,\"AUTO_MODE-value\":false,\"CONTROL_MODE-value\":0},{\"name\":\"MEQ0447483\",\"room\":\"Bedroom\",\"SET_TEMPERATURE-value\":17,\"ACTUAL_TEMPERATURE-value\":22.4,\"VALVE_STATE-value\":0,\"BATTERY_STATE-value\":2.7,\"BOOST_STATE-value\":0,\"AUTO_MODE-value\":false,\"CONTROL_MODE-value\":0},{\"name\":\"MEQ1875541\",\"room\":\"Child\",\"SET_TEMPERATURE-value\":18,\"ACTUAL_TEMPERATURE-value\":20.4,\"VALVE_STATE-value\":0,\"BATTERY_STATE-value\":2.7,\"BOOST_STATE-value\":0,\"AUTO_MODE-value\":false,\"CONTROL_MODE-value\":0},{\"name\":\"MEQ1875552\",\"room\":\"Guest Room\",\"SET_TEMPERATURE-value\":20,\"ACTUAL_TEMPERATURE-value\":21.1,\"VALVE_STATE-value\":9,\"BATTERY_STATE-value\":2.8,\"BOOST_STATE-value\":0,\"AUTO_MODE-value\":false,\"CONTROL_MODE-value\":0}]",
+        "payloadType": "json",
+        "x": 190,
+        "y": 140,
+        "wires": [
+            [
+                "bce4e0bd.d96308"
+            ]
+        ]
+    },
+    {
+        "id": "bce4e0bd.d96308",
+        "type": "change",
+        "z": "8ee99e4c.e7fa28",
+        "name": "ui_control",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ui_control",
+                "pt": "msg",
+                "to": "{\"tabulator\":{\"columnResized\":\"function(column){     var newColumn = {         field: column._column.field,         visible: column._column.visible,         width: column._column.width,         widthFixed: column._column.widthFixed,         widthStyled: column._column.widthStyled     }; this.send({topic:this.config.topic,ui_control:{callback:'columnResized',columnWidths:newColumn}}); }\",\"columnMoved\":\"function(column, columns){     var newColumns=[];     columns.forEach(function (column) {         newColumns.push({'field': column._column.field});     });     this.send({topic:this.config.topic,ui_control:{callback:'columnMoved',columns:newColumns}}); }\",\"groupHeader\":\"function (value, count, data, group) {return value + \\\"<span style='color:#d00; margin-left:10px;'>(\\\" + count + \\\" Termostat\\\"+((count>1) ? \\\"e\\\" : \\\"\\\") + \\\")</span>\\\";}\",\"columns\":[{\"formatterParams\":{\"target\":\"_blank\"},\"title\":\"ROom\",\"field\":\"room\",\"width\":100,\"frozen\":true},{\"formatterParams\":{\"target\":\"_blank\"},\"title\":\"Device\",\"field\":\"name\",\"width\":100,\"align\":\"center\"},{\"formatterParams\":{\"target\":\"_blank\"},\"title\":\"Type\",\"field\":\"deviceType\",\"width\":100,\"align\":\"center\"},{\"formatterParams\":{\"target\":\"_blank\"},\"title\":\"Measurements\",\"columns\":[{\"formatterParams\":{\"target\":\"_blank\"},\"title\":\"target\",\"field\":\"SET_TEMPERATURE-value\",\"formatter\":\"function(cell, formatterParams, onRendered){return cell.getValue()+'°C';}\",\"topCalc\":\"avg\",\"width\":100},{\"formatterParams\":{\"target\":\"_blank\",\"min\":10,\"max\":25,\"color\":[\"blue\",\"green\",\"red\"],\"legend\":\"function (value) {return '&nbsp;&nbsp;'+value+'°C';}\",\"legendColor\":\"#101010\",\"legendAlign\":\"left\"},\"title\":\"current\",\"field\":\"ACTUAL_TEMPERATURE-value\",\"formatter\":\"progress\",\"topCalc\":\"avg\",\"width\":100},{\"formatterParams\":{\"target\":\"_blank\",\"min\":0,\"max\":99,\"color\":[\"gray\",\"orange\",\"red\"],\"legend\":\"function (value) {return (value>0)? '&nbsp;&nbsp;'+value+' %' : '-';}\",\"legendColor\":\"#101010\",\"legendAlign\":\"center\"},\"title\":\"Valve\",\"field\":\"VALVE_STATE-value\",\"formatter\":\"progress\",\"topCalc\":\"max\",\"width\":100},{\"formatterParams\":{\"target\":\"_blank\",\"min\":1.5,\"max\":4.6,\"color\":[\"red\",\"orange\",\"green\"],\"legend\":\"function (value) {return value+' V';}\",\"legendColor\":\"#101010\",\"legendAlign\":\"center\"},\"title\":\"Batt\",\"field\":\"BATTERY_STATE-value\",\"formatter\":\"progress\",\"topCalc\":\"min\",\"width\":100}]},{\"formatterParams\":{\"target\":\"_blank\"},\"title\":\"Settings\",\"columns\":[{\"formatterParams\":{\"target\":\"_blank\",\"min\":0,\"max\":30,\"color\":[\"red\",\"orange\",\"green\"],\"legend\":\"function (value) {     if (value>0)         return \\\"<span style='color:#101010;'>\\\"+value+\\\" min</span>\\\";     else         return \\\"<span style='color:#A0A0A0;'>aus</span>\\\"; }\",\"legendColor\":\"#101010\",\"legendAlign\":\"center\"},\"title\":\"Boost\",\"field\":\"BOOST_STATE-value\",\"formatter\":\"progress\",\"width\":100},{\"formatterParams\":{\"target\":\"_blank\",\"allowEmpty\":true,\"allowTruthy\":true,\"tickElement\":\"<i class='fa fa-clock-o'></i>\",\"crossElement\":\"<i class='fa fa-ban'></i>\"},\"title\":\"Auto\",\"field\":\"AUTO_MODE-value\",\"formatter\":\"tickCross\",\"width\":100,\"align\":\"center\"},{\"formatterParams\":{\"target\":\"_blank\"},\"title\":\"Mode\",\"field\":\"CONTROL_MODE-value\",\"formatter\":\"function(cell, formatterParams, onRendered){     var html=\\\"<i class=\\\\\\\"\\\";     switch(cell.getValue()) {         case 0: html+=\\\"fa fa-calendar-check-o\\\"; break;         case 1: html+=\\\"fa fa-hand-o-up\\\"; break;         case 2: html+=\\\"fa fa-suitcase\\\"; break;         case 3: html+=\\\"fa fa-spinner fa-spin fa-fw\\\"; break;     }     html+='\\\\\\\"></i>';     return html; }\",\"width\":100,\"align\":\"center\"},{\"formatterParams\":{\"target\":\"_blank\"},\"title\":\"Auto\",\"field\":\"AUTO_MODE-value\",\"formatter\":\"tick\",\"width\":100,\"align\":\"center\"}]}],\"layout\":\"fitColumns\",\"movableColumns\":true,\"groupBy\":\"\"},\"customHeight\":12}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 336,
+        "y": 140,
+        "wires": [
+            [
+                "6d74e217.d0410c"
+            ]
+        ]
+    },
+    {
+        "id": "898f94bb.25099",
+        "type": "debug",
+        "z": "8ee99e4c.e7fa28",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 649,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "6d74e217.d0410c",
+        "type": "ui_table",
+        "z": "8ee99e4c.e7fa28",
+        "group": "585ae877.96e7",
+        "name": "Thermostats",
+        "order": 1,
+        "width": "20",
+        "height": "7",
+        "columns": [],
+        "outputs": 1,
+        "cts": true,
+        "x": 499,
+        "y": 140,
+        "wires": [
+            [
+                "898f94bb.25099"
+            ]
+        ]
+    },
+    {
+        "id": "f13465dc.31b3d8",
+        "type": "s7 out",
+        "z": "6a38c0bd.801a9",
+        "endpoint": "7b0cef48.67d668",
+        "variable": "",
+        "name": "",
+        "x": 300,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "fc816ad5.2ff4b",
+        "type": "comment",
+        "z": "6a38c0bd.801a9",
+        "name": "",
+        "info": "[formats](https://github.com/plcpeople/nodes7)",
+        "x": 500,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "f7fa3901.ea7b6",
+        "type": "link in",
+        "z": "6a38c0bd.801a9",
+        "name": "tos7",
+        "links": [
+            "3c110f69.9153c",
+            "d202e6bb.0f799"
+        ],
+        "x": 175,
+        "y": 400,
+        "wires": [
+            [
+                "f13465dc.31b3d8",
+                "bcd75560.ac5d8"
+            ]
+        ]
+    },
+    {
+        "id": "37cdcf89.621af",
+        "type": "inject",
+        "z": "6a38c0bd.801a9",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            },
+            {
+                "p": "variable",
+                "v": "MODULES[0].STA",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "512",
+        "payloadType": "num",
+        "x": 130,
+        "y": 360,
+        "wires": [
+            [
+                "f13465dc.31b3d8"
+            ]
+        ]
+    },
+    {
+        "id": "a121e859.15c96",
+        "type": "function",
+        "z": "d5e4d39c.6d5aa8",
+        "name": "",
+        "func": "let modul = Number.parseInt(msg.topic.substring(3),10); \nlet submodul = msg.row;\nlet varname = `MODULES[${modul}].STA`;\nlet value = 0b100000000000 >> submodul;\nmsg.payload = value;\nmsg.variable = varname;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 695,
+        "y": 300,
+        "wires": [
+            [
+                "3c110f69.9153c"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "3c110f69.9153c",
+        "type": "link out",
+        "z": "d5e4d39c.6d5aa8",
+        "name": "frommodulessta",
+        "links": [
+            "f7fa3901.ea7b6"
+        ],
+        "x": 795,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "bcd75560.ac5d8",
+        "type": "debug",
+        "z": "6a38c0bd.801a9",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 265,
+        "y": 360,
+        "wires": [],
+        "l": false
+    },
+    {
+        "id": "a9aded68.89c15",
+        "type": "function",
+        "z": "d5e4d39c.6d5aa8",
+        "name": "tosubmoduls",
+        "func": "const submodulecfg = global.get (\"plc1.submodule\");\nconst chcfg = global.get (\"plc1.ch_cfg\");\nconst chhmicfg = global.get (\"plc1.ch_hmi\");\nconst submodulebuf = {}; \nlet val, adr, adrw, mask, bias;\nif (!submodulecfg || !chcfg) return null;\nconst buf = Buffer.from(msg.payload);\nfor (const prop in submodulecfg){\n    type = submodulecfg[prop].type;\n    adrw = submodulecfg[prop].adr;\n    adr = adrw*2;\n    if (prop === 'CH') {\n        val = [];\n        for (let i=0; i<16; i++){\n            bias = i * 4;\n            val [i] = {STA : buf.readUInt16BE(adr + bias),\n                   VALi : buf.readUInt16BE(adr + bias + 2),\n            };\n            for (const prop1 in chcfg){\n                if (chcfg[prop1].type === 'BOOL') {\n                    mask = 1 << chcfg[prop1].bit;\n                    val[i][prop1] = (val[i].STA & mask) !== 0; \n                }          \n            } \n        }\n    } else {\n        switch (type) {\n            case 'UINT':\n                //to fututure chck protocol type\n                val = buf.readUInt16BE(adr);\n                break;\n            case 'INT':\n                val = buf.readInt16BE(adr);\n                break;\n        }\n    }    \n    submodulebuf[prop] = {\n    decsr: submodulecfg[prop].descr,\n    val: val,\n    type: type\n    }      \n    //console.log(`${prop}`);\n}\nglobal.set (\"plc1.submodulebuf\", submodulebuf);\nmsg.payload = submodulebuf;\nmsg.topic = \"submodulebuf\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 250,
+        "y": 380,
+        "wires": [
+            [
+                "36759223.869096"
+            ]
+        ]
+    },
+    {
+        "id": "8948ac1c.f196d",
+        "type": "ui_table",
+        "z": "d5e4d39c.6d5aa8",
+        "group": "c5ddeb01.8712a8",
+        "name": "",
+        "order": 1,
+        "width": 10,
+        "height": 16,
+        "columns": [],
+        "outputs": 1,
+        "cts": true,
+        "x": 590,
+        "y": 380,
+        "wires": [
+            [
+                "e938a4a.e096158"
+            ]
+        ]
+    },
+    {
+        "id": "36759223.869096",
+        "type": "function",
+        "z": "d5e4d39c.6d5aa8",
+        "name": "headers",
+        "func": "msg.ui_control = {tabulator: {\n    columnVertAlign:\"bottom\", //align header contents to bottom of cell\n    columns: [\n    {title:'CH', field:'chname', align:\"left\", width:50,  formatter: 'function(cell, formatterParams, onRendered){let smbl = cell.getValue()[0]; cell.getElement().style.backgroundColor = (smbl===\">\") ? \"aqua\" : \"LightGrey\"; return cell.getValue()}'}, \n    {title:\"VAL\", field:'vali', align:\"left\", width:50, formatter: 'function(cell, formatterParams, onRendered){cell.getElement().style.backgroundColor = \"LightGrey\"; return cell.getValue()}'},\n    {title:\"V\", field:'VAL', align:\"left\", formatter:\"color\", width:5},\n    {title:\"R\", field:'VRAW', align:\"left\", formatter:\"color\", width:5},\n    {title:\"L\", field:'ULNK', align:\"left\", formatter:\"color\", width:5},\n    {title:\"E\", field:'MERR', align:\"left\", formatter:\"color\", width:5},\n    {title:\"EB\", field:'BRK', align:\"left\", formatter:\"color\", width:5},\n    {title:\"ES\", field:'SHRT', align:\"left\", formatter:\"color\", width:5},\n    {title:\"F\", field:'FRC', align:\"left\", formatter:\"color\", width:5},\n    {title:\"S\", field:'SML', align:\"left\", formatter:\"color\", width:5},\n    ]}};    \nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 355,
+        "y": 380,
+        "wires": [
+            [
+                "b962bf3.f63644"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "b962bf3.f63644",
+        "type": "function",
+        "z": "d5e4d39c.6d5aa8",
+        "name": "map",
+        "func": "let table = [];\n//номер каналу, значення, VAL, VRAW, ULNK, MERR, BRK, SHRT, FRC, SML\nlet chname, prefix; \nswitch (msg.payload.TYPE.val) {\n   case 0:\n    prefix = ' '; \n    break;\n   case 1:\n    prefix = 'DI';               \n    break;\n   case 2:\n    prefix = 'DO';                   \n    break;\n   case 3:\n    prefix = 'AI';                   \n    break;\n   case 4:\n    prefix = 'AO';                   \n    break;\n   case 5:\n    prefix = 'COM';                   \n    break;\n   default: \n    prefix = ' '; \n    break;           \n}\nfor (let i=0; i< msg.payload.CNT.val;i++){\n   let p = '';\n   if (msg.payload.CH.val[i].INBUF > 0) p = '>';\n   chname = p+prefix + (+msg.payload.STRTNMB.val + i);\n   table [i] = {\n      chname,\n      vali: msg.payload.CH.val[i].VALi,\n      VAL: (msg.payload.CH.val[i].VAL> 0) ? 'lime' : 'LightGrey',\n      VRAW: (msg.payload.CH.val[i].VRAW > 0) ? 'lime' : 'LightGrey',\n      ULNK: (msg.payload.CH.val[i].ULNK >0) ? 'white' : 'LightGrey', \n      MERR:(msg.payload.CH.val[i].MERR >0) ? 'red' : 'LightGrey', \n      BRK: (msg.payload.CH.val[i].BRK > 0) ? 'fuchsia' : 'LightGrey', \n      SHRT: (msg.payload.CH.val[i].SHRT>0) ? 'fuchsia' : 'LightGrey', \n      FRC: (msg.payload.CH.val[i].FRC>0) ? 'navy' : 'LightGrey', \n      SML: (msg.payload.CH.val[i].SML>0) ? 'blue' : 'LightGrey',   \n   }  \n}\nmsg.payload = table;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 450,
+        "y": 380,
+        "wires": [
+            [
+                "8948ac1c.f196d"
+            ]
+        ]
+    },
+    {
+        "id": "e938a4a.e096158",
+        "type": "function",
+        "z": "d5e4d39c.6d5aa8",
+        "name": "",
+        "func": "msg.variable = 'SUBMODULE.CMD';\nmsg.payload = msg.row + 1;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 695,
+        "y": 380,
+        "wires": [
+            [
+                "3c110f69.9153c"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "a7b79741.4049a8",
+        "type": "function",
+        "z": "d5e4d39c.6d5aa8",
+        "name": "headers",
+        "func": "msg.ui_control = {tabulator: {\n    columnVertAlign:\"bottom\", //align header contents to bottom of cell\n    columns: [\n    {title:'CH', field:'chname', align:\"left\", width:100,  formatter: 'function(cell, formatterParams, onRendered){let smbl = cell.getValue()[0]; cell.getElement().style.backgroundColor = (smbl===\">\") ? \"aqua\" : \"LightGrey\"; return cell.getValue()}'}, \n    {title:\"VAL\", field:'vali', align:\"left\", width:50, formatter: 'function(cell, formatterParams, onRendered){cell.getElement().style.backgroundColor = \"LightGrey\"; return cell.getValue()}'},\n    {title:\"VAR\", field:'VARID', align:\"left\", width:50, formatter: 'function(cell, formatterParams, onRendered){cell.getElement().style.backgroundColor = \"LightGrey\"; return cell.getValue()}'},\n    {title:\"V\", field:'VAL', align:\"left\", formatter:\"color\", width:5},\n    {title:\"R\", field:'VRAW', align:\"left\", formatter:\"color\", width:5},\n    {title:\"L\", field:'ULNK', align:\"left\", formatter:\"color\", width:5},\n    {title:\"E\", field:'MERR', align:\"left\", formatter:\"color\", width:5},\n    {title:\"EB\", field:'BRK', align:\"left\", formatter:\"color\", width:5},\n    {title:\"ES\", field:'SHRT', align:\"left\", formatter:\"color\", width:5},\n    {title:\"F\", field:'FRC', align:\"left\", formatter:\"color\", width:5},\n    {title:\"S\", field:'SML', align:\"left\", formatter:\"color\", width:5},\n    ]}};    \nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 355,
+        "y": 460,
+        "wires": [
+            [
+                "c513f17d.ddd928"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "c513f17d.ddd928",
+        "type": "function",
+        "z": "d5e4d39c.6d5aa8",
+        "name": "map",
+        "func": "let table = [];\n//номер каналу, значення, VAL, VRAW, ULNK, MERR, BRK, SHRT, FRC, SML\nlet chname, prefix; \nswitch (msg.payload.CLSID.val & 0x00F0) {\n   case 0x0:\n    prefix = ' '; \n    break;\n   case 0x10:\n    prefix = 'DI';               \n    break;\n   case 0x20:\n    prefix = 'DO';                   \n    break;\n   case 0x30:\n    prefix = 'AI';                   \n    break;\n   case 0x40:\n    prefix = 'AO';                   \n    break;\n   case 0x50:\n    prefix = 'COM';                   \n    break;\n   default: \n    prefix = ' '; \n    break;           \n}\n\nchname = prefix + msg.payload.ID.val;\ntable [0] = {\n  chname,\n  VARID: msg.payload.VARID.val,\n  vali: msg.payload.VALI.val,\n  VAL: (msg.payload.VAL.val> 0) ? 'lime' : 'LightGrey',\n  VRAW: (msg.payload.VRAW.val > 0) ? 'lime' : 'LightGrey',\n  ULNK: (msg.payload.ULNK.val >0) ? 'white' : 'LightGrey', \n  MERR:(msg.payload.MERR.val >0) ? 'red' : 'LightGrey', \n  BRK: (msg.payload.BRK.val > 0) ? 'fuchsia' : 'LightGrey', \n  SHRT: (msg.payload.SHRT.val>0) ? 'fuchsia' : 'LightGrey', \n  FRC: (msg.payload.FRC.val>0) ? 'navy' : 'LightGrey', \n  SML: (msg.payload.SML.val>0) ? 'blue' : 'LightGrey',   \n}  \nmsg.payload = table;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 450,
+        "y": 460,
+        "wires": [
+            [
+                "4385c50c.2f3cf4"
+            ]
+        ]
+    },
+    {
+        "id": "4385c50c.2f3cf4",
+        "type": "ui_table",
+        "z": "d5e4d39c.6d5aa8",
+        "group": "f7cc47d8.8ed128",
+        "name": "",
+        "order": 1,
+        "width": 14,
+        "height": 2,
+        "columns": [],
+        "outputs": 1,
+        "cts": true,
+        "x": 610,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2904181f.af2ee",
+        "type": "ui_slider",
+        "z": "d5e4d39c.6d5aa8",
+        "name": "",
+        "label": "slider",
+        "tooltip": "",
+        "group": "f7cc47d8.8ed128",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "outs": "end",
+        "topic": "",
+        "min": 0,
+        "max": "32000",
+        "step": 1,
+        "x": 650,
+        "y": 500,
+        "wires": [
+            [
+                "7fae5a1f.4b06cc"
+            ]
+        ]
+    },
+    {
+        "id": "b6d96481.300cc",
+        "type": "change",
+        "z": "d5e4d39c.6d5aa8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.VALI.val",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 555,
+        "y": 500,
+        "wires": [
+            [
+                "2904181f.af2ee"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "67767fef.4f0fb",
+        "type": "change",
+        "z": "d5e4d39c.6d5aa8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.FRC.val",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 555,
+        "y": 540,
+        "wires": [
+            [
+                "1eb3a96b.654fbf",
+                "6b2e9a97.f0ad4c"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "6b2e9a97.f0ad4c",
+        "type": "debug",
+        "z": "d5e4d39c.6d5aa8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "c0de2587.1deea8",
+        "type": "ui_button",
+        "z": "d5e4d39c.6d5aa8",
+        "name": "",
+        "group": "f7cc47d8.8ed128",
+        "order": 3,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "FRC",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "769",
+        "payloadType": "num",
+        "topic": "",
+        "x": 570,
+        "y": 580,
+        "wires": [
+            [
+                "d1248315.562b1"
+            ]
+        ]
+    },
+    {
+        "id": "1eb3a96b.654fbf",
+        "type": "ui_led",
+        "z": "d5e4d39c.6d5aa8",
+        "order": 4,
+        "group": "f7cc47d8.8ed128",
+        "width": 1,
+        "height": 1,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#808080",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#00008b",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": false,
+        "name": "",
+        "x": 650,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "95d8b715.eb7598",
+        "type": "ui_button",
+        "z": "d5e4d39c.6d5aa8",
+        "name": "",
+        "group": "f7cc47d8.8ed128",
+        "order": 5,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "UNFRC",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "770",
+        "payloadType": "num",
+        "topic": "",
+        "x": 540,
+        "y": 620,
+        "wires": [
+            [
+                "d1248315.562b1"
+            ]
+        ]
+    },
+    {
+        "id": "d1248315.562b1",
+        "type": "change",
+        "z": "d5e4d39c.6d5aa8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "variable",
+                "pt": "msg",
+                "to": "CHBUF.CMD",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 655,
+        "y": 620,
+        "wires": [
+            [
+                "3c110f69.9153c"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "7fae5a1f.4b06cc",
+        "type": "change",
+        "z": "d5e4d39c.6d5aa8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "variable",
+                "pt": "msg",
+                "to": "CHBUF.VAL",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 735,
+        "y": 500,
+        "wires": [
+            [
+                "3c110f69.9153c"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "c20dad2e.fb9ab8",
+        "type": "ui_table",
+        "z": "60cc6c68.946404",
+        "group": "400331db.f015d",
+        "name": "",
+        "order": 1,
+        "width": "8",
+        "height": "1",
+        "columns": [],
+        "outputs": 0,
+        "cts": false,
+        "x": 535,
+        "y": 160,
+        "wires": [],
+        "l": false
+    },
+    {
+        "id": "7686d871.39e448",
+        "type": "link out",
+        "z": "60cc6c68.946404",
+        "name": "tobanner",
+        "links": [
+            "11dc9e31.0f45fa"
+        ],
+        "x": 595,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "11dc9e31.0f45fa",
+        "type": "link in",
+        "z": "d5e4d39c.6d5aa8",
+        "name": "",
+        "links": [
+            "7686d871.39e448"
+        ],
+        "x": 115,
+        "y": 240,
+        "wires": [
+            [
+                "86f873dc.1fed5"
+            ]
+        ]
+    },
+    {
+        "id": "86f873dc.1fed5",
+        "type": "ui_table",
+        "z": "d5e4d39c.6d5aa8",
+        "group": "e55006e6.6c052",
+        "name": "banner",
+        "order": 1,
+        "width": "9",
+        "height": "1",
+        "columns": [],
+        "outputs": 0,
+        "cts": false,
+        "x": 195,
+        "y": 240,
+        "wires": [],
+        "l": false
+    },
+    {
+        "id": "441f9563.d21d84",
+        "type": "debug",
+        "z": "d5e4d39c.6d5aa8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 530,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "31383d9d.2b78ea",
+        "type": "function",
+        "z": "60cc6c68.946404",
+        "name": "",
+        "func": "msg.payload = RED;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 160,
+        "y": 340,
+        "wires": [
+            [
+                "1fbe7244.693aee"
+            ]
+        ]
+    },
+    {
+        "id": "1fbe7244.693aee",
+        "type": "debug",
+        "z": "60cc6c68.946404",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 290,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "86745a7e.392f2",
+        "type": "inject",
+        "z": "60cc6c68.946404",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 90,
+        "y": 300,
+        "wires": [
+            [
+                "31383d9d.2b78ea"
+            ]
+        ]
+    },
+    {
+        "id": "33921764.019138",
+        "type": "OS",
+        "z": "7cbe35b0.9842cc",
+        "name": "",
+        "x": 190,
+        "y": 80,
+        "wires": [
+            [
+                "a2d7c77a.0af4c8"
+            ]
+        ]
+    },
+    {
+        "id": "689b7c0d.65080c",
+        "type": "inject",
+        "z": "7cbe35b0.9842cc",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 65,
+        "y": 80,
+        "wires": [
+            [
+                "33921764.019138",
+                "6cf35ae4.73204c"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "a2d7c77a.0af4c8",
+        "type": "change",
+        "z": "7cbe35b0.9842cc",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "sys",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 295,
+        "y": 80,
+        "wires": [
+            [
+                "9ecba780.9e7c88"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "daef3c6e.0a86a",
+        "type": "Uptime",
+        "z": "7cbe35b0.9842cc",
+        "name": "",
+        "x": 170,
+        "y": 160,
+        "wires": [
+            [
+                "61a71cef.4056c4"
+            ]
+        ]
+    },
+    {
+        "id": "99e0f277.ded05",
+        "type": "inject",
+        "z": "7cbe35b0.9842cc",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 75,
+        "y": 160,
+        "wires": [
+            [
+                "daef3c6e.0a86a",
+                "af92d436.3eb2f8",
+                "a29e5938.20eae8"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "61a71cef.4056c4",
+        "type": "change",
+        "z": "7cbe35b0.9842cc",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "sys.uptime",
+                "pt": "global",
+                "to": "payload.uptime",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 255,
+        "y": 160,
+        "wires": [
+            []
+        ],
+        "l": false
+    },
+    {
+        "id": "af92d436.3eb2f8",
+        "type": "CPUs",
+        "z": "7cbe35b0.9842cc",
+        "name": "",
+        "x": 170,
+        "y": 200,
+        "wires": [
+            [
+                "672a12f2.7b42cc"
+            ]
+        ]
+    },
+    {
+        "id": "672a12f2.7b42cc",
+        "type": "change",
+        "z": "7cbe35b0.9842cc",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "sys.cpus",
+                "pt": "global",
+                "to": "payload.cpus",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 255,
+        "y": 200,
+        "wires": [
+            []
+        ],
+        "l": false
+    },
+    {
+        "id": "a29e5938.20eae8",
+        "type": "Memory",
+        "z": "7cbe35b0.9842cc",
+        "name": "",
+        "x": 160,
+        "y": 240,
+        "wires": [
+            [
+                "bb15b41f.5e68a8"
+            ]
+        ]
+    },
+    {
+        "id": "bb15b41f.5e68a8",
+        "type": "change",
+        "z": "7cbe35b0.9842cc",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "sys.memory",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 255,
+        "y": 240,
+        "wires": [
+            []
+        ],
+        "l": false
+    },
+    {
+        "id": "6cf35ae4.73204c",
+        "type": "NetworkIntf",
+        "z": "7cbe35b0.9842cc",
+        "name": "",
+        "x": 210,
+        "y": 40,
+        "wires": [
+            [
+                "658aff11.00d59"
+            ]
+        ]
+    },
+    {
+        "id": "658aff11.00d59",
+        "type": "change",
+        "z": "7cbe35b0.9842cc",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "sys.networkInterfaces",
+                "pt": "global",
+                "to": "payload.networkInterfaces",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 335,
+        "y": 40,
+        "wires": [
+            []
+        ],
+        "l": false
+    },
+    {
+        "id": "9ecba780.9e7c88",
+        "type": "switch",
+        "z": "7cbe35b0.9842cc",
+        "name": "platform",
+        "property": "payload.platform",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "win32",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "linux",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 380,
+        "y": 80,
+        "wires": [
+            [
+                "f44dde56.56a72"
+            ],
+            [
+                "ba1e7f28.6e6c38"
+            ]
+        ]
+    },
+    {
+        "id": "f44dde56.56a72",
+        "type": "change",
+        "z": "7cbe35b0.9842cc",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "sys.homepath",
+                "pt": "global",
+                "to": "UserProfile",
+                "tot": "env"
+            },
+            {
+                "t": "set",
+                "p": "sys.noderedpath",
+                "pt": "global",
+                "to": "$env('UserProfile') & '\\\\.node-red\\\\'\t",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "sys.delimiter",
+                "pt": "global",
+                "to": "\\",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 495,
+        "y": 60,
+        "wires": [
+            [
+                "1163db92.915b2c"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "ba1e7f28.6e6c38",
+        "type": "change",
+        "z": "7cbe35b0.9842cc",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "sys.homepath",
+                "pt": "global",
+                "to": "HOME",
+                "tot": "env"
+            },
+            {
+                "t": "set",
+                "p": "sys.noderedpath",
+                "pt": "global",
+                "to": "$env('HOME') & '/.node-red/'",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "sys.delimiter",
+                "pt": "global",
+                "to": "/",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 495,
+        "y": 100,
+        "wires": [
+            [
+                "1163db92.915b2c"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "1163db92.915b2c",
+        "type": "function",
+        "z": "7cbe35b0.9842cc",
+        "name": "",
+        "func": "const settingspath = global.get ('sys.noderedpath').replace(/\\\\/g, '\\\\\\\\') + 'settings.js';\nmsg.filename = global.get ('sys.noderedpath') + 'tmp.js';\n\nlet code = \"const settingsRed =  require ('\" + settingspath + \"');\\n\"\ncode += \"console.log (JSON.stringify (settingsRed));\\n\"\nmsg.payload = code;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 575,
+        "y": 80,
+        "wires": [
+            [
+                "7efd3b69.eb1bec"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "2d1e607c.4d9de8",
+        "type": "debug",
+        "z": "7cbe35b0.9842cc",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 775,
+        "y": 260,
+        "wires": [],
+        "l": false
+    },
+    {
+        "id": "7efd3b69.eb1bec",
+        "type": "file",
+        "z": "7cbe35b0.9842cc",
+        "name": "",
+        "filename": "",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "utf8",
+        "x": 635,
+        "y": 80,
+        "wires": [
+            [
+                "2e6a4248.ccbebe"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "30b48399.eea34c",
+        "type": "exec",
+        "z": "7cbe35b0.9842cc",
+        "command": "",
+        "addpay": true,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "",
+        "x": 755,
+        "y": 80,
+        "wires": [
+            [
+                "7a212bae.144204"
+            ],
+            [],
+            []
+        ],
+        "l": false
+    },
+    {
+        "id": "2e6a4248.ccbebe",
+        "type": "change",
+        "z": "7cbe35b0.9842cc",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "'node ' & filename",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 695,
+        "y": 80,
+        "wires": [
+            [
+                "30b48399.eea34c"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "7a212bae.144204",
+        "type": "json",
+        "z": "7cbe35b0.9842cc",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 815,
+        "y": 80,
+        "wires": [
+            [
+                "76244b50.a29964"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "76244b50.a29964",
+        "type": "change",
+        "z": "7cbe35b0.9842cc",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "sys.nodesettings",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 875,
+        "y": 80,
+        "wires": [
+            [
+                "3df59ab7.c5f78e"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "3df59ab7.c5f78e",
+        "type": "switch",
+        "z": "7cbe35b0.9842cc",
+        "name": "",
+        "property": "payload.editorTheme.projects.enabled",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 495,
+        "y": 200,
+        "wires": [
+            [
+                "f9f08ae4.24dd98"
+            ],
+            [
+                "b759264.220fbd8"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "dcf25004.e6ba7",
+        "type": "debug",
+        "z": "7cbe35b0.9842cc",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 635,
+        "y": 320,
+        "wires": [],
+        "l": false
+    },
+    {
+        "id": "f9f08ae4.24dd98",
+        "type": "change",
+        "z": "7cbe35b0.9842cc",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "filename",
+                "pt": "msg",
+                "to": "$globalContext('sys.noderedpath') & '.config.projects.json'\t",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 575,
+        "y": 180,
+        "wires": [
+            [
+                "201b7dd5.61c7b2"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "9576c371.0f5bd",
+        "type": "comment",
+        "z": "7cbe35b0.9842cc",
+        "name": "get settings.js",
+        "info": "",
+        "x": 660,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "c36b438d.0a65d",
+        "type": "comment",
+        "z": "7cbe35b0.9842cc",
+        "name": "get active project",
+        "info": "",
+        "x": 640,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "201b7dd5.61c7b2",
+        "type": "file in",
+        "z": "7cbe35b0.9842cc",
+        "name": "",
+        "filename": "",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "utf8",
+        "x": 635,
+        "y": 180,
+        "wires": [
+            [
+                "7089f3d2.32c2f4"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "7089f3d2.32c2f4",
+        "type": "json",
+        "z": "7cbe35b0.9842cc",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 695,
+        "y": 180,
+        "wires": [
+            [
+                "bb4ed47d.ad1808"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "bb4ed47d.ad1808",
+        "type": "change",
+        "z": "7cbe35b0.9842cc",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "sys.nodesettings.activeProject",
+                "pt": "global",
+                "to": "payload.activeProject",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "sys.nodesettings.prjpath",
+                "pt": "global",
+                "to": "$globalContext('sys.noderedpath') & 'projects' & $globalContext('sys.delimiter') & payload.activeProject & $globalContext('sys.delimiter')\t",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 755,
+        "y": 180,
+        "wires": [
+            [
+                "42f3e2b0.5c813c"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "b759264.220fbd8",
+        "type": "change",
+        "z": "7cbe35b0.9842cc",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "sys.nodesettings.prjpath",
+                "pt": "global",
+                "to": "$globalContext('sys.noderedpath') \t",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 575,
+        "y": 220,
+        "wires": [
+            [
+                "42f3e2b0.5c813c"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "42f3e2b0.5c813c",
+        "type": "change",
+        "z": "7cbe35b0.9842cc",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "sys.jsonpath",
+                "pt": "global",
+                "to": "$globalContext('sys.nodesettings.prjpath') & 'jsonstructs' & $globalContext('sys.delimiter')\t",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 655,
+        "y": 240,
+        "wires": [
+            [
+                "dcf25004.e6ba7"
+            ]
+        ],
+        "l": false
+    }
+]
