@@ -1,0 +1,6 @@
+{"IoTsystype": "PACFramework", 
+"IoTdevid": "xxxx_xxxx_xxxx", 
+"IoTdevname": "plc1",
+"IoTdevdescription": "Test plc",
+"IoTdriver": "node-red-contrib-s7",
+"gitrepadr": ""}
