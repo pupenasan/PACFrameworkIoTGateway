@@ -1,7 +1,10 @@
-s7tcpip
-=======
+# PAC Framework IoT Gateway 
 
-### About
+**PAC Framework IoT Gateway** - це проект виконавчої системи, розроблений в середовищі Node-RED, призначений для роботи сумісно з ПЛК, що базується на [PAC Framework](https://github.com/pupenasan/PACFramework), задля виконання наступних функцій:
 
-This is your project's README.md file. It helps users understand what your
-project does, how to use it and anything else they may need to know.
+- забезпечення людино-машинного інтерфейсу з використанням WEB для налагодження системи керування, що виконана на PAC Framework
+- функції IoT-шлюзу: збір, обробка, локальне збереження даних, взаємодія з хмарними застосунками та сховищами    
+
+PAC Framework IoT Gateway може функціонувати на будь якому апаратному забезпеченні, де може бути розгорнутий Node-RED. Передбачається мультиагентність - взаємодія шлюзів між собою.   
+
+Вся документація та опис знаходиться у [відповідному розділі](https://github.com/pupenasan/PACFramework/tree/master/iotgateway) репозиторію. У цьому репозиторії тільки актулаьний проект і його обговорення.  
